@@ -3,9 +3,9 @@
 
 # TEAM
 
-    Mauno Vähä -- Developer -- @maunovaha
+  Mauno Vähä -- Developer -- @maunovaha
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+  HTML5, CSS3
+  jQuery, Modernizr

@@ -53,9 +53,9 @@ audio:not([controls]) {
    ========================================================================== */
 /*
  * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
+ *  `em` units.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ *  user zoom.
  */
 /* line 69, K:/github/maunovaha.github.io/source/css/normalize.css.scss */
 html {
@@ -349,7 +349,7 @@ legend {
 /*
  * 1. Corrects font size not being inherited in all browsers.
  * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
- *    and Chrome.
+ *  and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
 /* line 391, K:/github/maunovaha.github.io/source/css/normalize.css.scss */
@@ -377,12 +377,12 @@ input {
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
+ *  and `video` controls.
  * 2. Corrects inability to style clickable `input` types in iOS.
  * 3. Improves usability and consistency of cursor style between image-type
- *    `input` and others.
+ *  `input` and others.
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
+ *  Known issue: inner spacing remains in IE 6.
  */
 /* line 421, K:/github/maunovaha.github.io/source/css/normalize.css.scss */
 button,
@@ -408,7 +408,7 @@ input[disabled] {
  * 1. Addresses box sizing set to content-box in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  * 3. Removes excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
+ *  Known issue: excess padding remains in IE 6.
  */
 /* line 444, K:/github/maunovaha.github.io/source/css/normalize.css.scss */
 input[type="checkbox"],
@@ -425,7 +425,7 @@ input[type="radio"] {
 /*
  * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
+ *  (include `-moz` to future-proof).
  */
 /* line 457, K:/github/maunovaha.github.io/source/css/normalize.css.scss */
 input[type="search"] {
