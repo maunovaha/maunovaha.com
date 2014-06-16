@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- Use title if it"s in the page YAML frontmatter -->
     <title>maunovaha.github.io</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -15,7 +15,21 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    <!-- http://stackoverflow.com/questions/6272702/should-modernizr-file-be-placed-in-head -->
+    <!--
+    <script src="js/vendor/modernizr-custom-2.8.2.min.js"></script>
+    -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-51943033-1"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function() {
+        var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -26,17 +40,11 @@
 <p>maunovaha.github.io ...</p>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics -->
+    <!-- require.js -->
+    <script src="js/vendor/require-custom.js"></script>
+    <!-- require.js main js file for this view -->
     <script>
-      var _gaq=[['_setAccount','UA-51943033-1'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+      require(["view/index/main-index"]);
     </script>
   </body>
 </html>
