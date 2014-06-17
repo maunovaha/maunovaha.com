@@ -1892,8 +1892,6 @@ var requirejs, require, define;
             }
             node.src = url;
 
-            console.log("using url: " + url);
-
             //For some cache cases in IE 6-8, the script executes before the end
             //of the appendChild execution, so to tie an anonymous define
             //call to the module name (which is stored on the node), hold on
@@ -2077,26 +2075,8 @@ var requirejs, require, define;
     req(cfg);
 }(this));
 
-/**
- * Avoid `console` errors in browsers that lack a console.
- *
- */
-if (!(window.console && console.log)) {
-  (function () {
-    var noop = function () {};
-    var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
-    var length = methods.length;
-    var console = window.console = {};
-    while (length--) {
-      console[methods[length]] = noop;
-    }
-  }());
-}
+define("vendor/require", function(){});
 
-/**
- * Require.js config
- *
- */
 require.config({
   baseUrl: "./js",
   paths: {
@@ -2104,7 +2084,7 @@ require.config({
   }
 });
 
-define("vendor/require-custom", function(){});
+define("requireConfig", function(){});
 
 /*!
  * jQuery JavaScript Library v2.1.1
