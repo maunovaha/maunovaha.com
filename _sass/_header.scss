@@ -1,19 +1,29 @@
-header {
+.site-header {
   background: #2d3e50;
 }
 
-header .header-content {
+.site-header .content {
   color: #fff;
-  max-width: 1320px;
+  max-width: 1280px;
+  padding: 0px 30px;
   margin: 0 auto;
+
+  a,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
 
   a,
   a:visited,
   a:hover,
   a:active {
-    text-decoration: none;
     color: #fff;
     text-transform: lowercase;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   h1 {
@@ -21,12 +31,12 @@ header .header-content {
     margin: 33px 0px 0px 0px;
   }
 
-  h1 a {
-    text-transform: uppercase;
-  }
-
   p {
     margin: 0px;
+  }
+
+  nav {
+    float: right;
   }
 
   ul {
@@ -34,7 +44,6 @@ header .header-content {
     margin: 0px;
     list-style: none;
     line-height: 16px;
-    float: right;
   }
 
   ul li {
@@ -51,8 +60,9 @@ header .header-content {
     line-height: 120px;
   }
 
-  ul li a.header-selected-link {
+  ul li a.selected {
     background: #ef504f;
+    text-decoration: none;
   }
 
 }
