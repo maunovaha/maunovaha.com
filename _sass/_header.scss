@@ -5,8 +5,9 @@
 .site-header .content {
   color: #fff;
   max-width: 1280px;
-  padding: 0px 30px;
+  /* padding: 0px 33px; */
   margin: 0 auto;
+  text-align: center;
 
   a,
   a:visited,
@@ -27,7 +28,6 @@
   }
 
   h1 {
-    font-size: 24px;
     margin: 33px 0px 0px 0px;
   }
 
@@ -36,7 +36,7 @@
   }
 
   nav {
-    float: right;
+    margin: 22px 0px 0px 0px; /* 22px 0px 20px 0px; */
   }
 
   ul {
@@ -44,6 +44,7 @@
     margin: 0px;
     list-style: none;
     line-height: 16px;
+    background: #42586F;
   }
 
   ul li {
@@ -55,14 +56,40 @@
 
   ul li a {
     margin: 0px;
-    padding: 0px 40px;
+    padding: 33px 40px;
     float: left;
-    line-height: 120px;
   }
 
   ul li a.selected {
     background: #ef504f;
     text-decoration: none;
   }
-
 }
+
+@media screen and (min-width: 64em) {
+
+  .site-header .content {
+    text-align: left;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      margin: 0px;
+      float: right;
+    }
+
+    ul li a {
+      line-height: 120px;
+      padding: 0px 40px;
+    }
+
+    ul li a.selected {
+      background: #ef504f;
+      text-decoration: none;
+    }
+  }
+}
+
+
