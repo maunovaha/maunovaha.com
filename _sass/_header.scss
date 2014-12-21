@@ -4,10 +4,9 @@
 
 .site-header .content {
   color: #fff;
-  max-width: 1280px;
-  /* padding: 0px 33px; */
+  /*max-width: 1280px;*/
+  padding: 0px 30px;
   margin: 0 auto;
-  text-align: center;
 
   a,
   a:visited,
@@ -28,7 +27,8 @@
   }
 
   h1 {
-    margin: 33px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
   }
 
   p {
@@ -36,7 +36,7 @@
   }
 
   nav {
-    margin: 22px 0px 0px 0px; /* 22px 0px 20px 0px; */
+    /*margin: 22px 0px 0px 0px; */ /* 22px 0px 20px 0px; */
   }
 
   ul {
@@ -44,7 +44,6 @@
     margin: 0px;
     list-style: none;
     line-height: 16px;
-    background: #42586F;
   }
 
   ul li {
@@ -56,12 +55,11 @@
 
   ul li a {
     margin: 0px;
-    padding: 33px 40px;
+    padding: 0px 16px;  /* 33px 40px; */
     float: left;
   }
 
   ul li a.selected {
-    background: #ef504f;
     text-decoration: none;
   }
 }
@@ -69,11 +67,8 @@
 @media screen and (min-width: 64em) {
 
   .site-header .content {
-    text-align: left;
 
-    h1 {
-      font-size: 24px;
-    }
+    /*
 
     nav {
       margin: 0px;
@@ -89,6 +84,7 @@
       background: #ef504f;
       text-decoration: none;
     }
+    */
   }
 }
 

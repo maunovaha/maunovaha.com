@@ -1,24 +1,24 @@
 .site-content {
-  max-width: 1280px;
-  margin: 33px auto;
-  padding: 0px 33px;
+  max-width: 1024px;
+  margin: 30px auto;
+  padding: 0px 30px;
 }
 
 .site-content .post {
   .post-header {
     border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .post-header .post-title {
     margin: 0px;
-    line-height: 32px;
+    line-height: 42px;
   }
 
   .post-header .post-meta {
     color: #999;
     font-size: 14px;
-    margin-top: 10px;
+    /*margin-top: 20px;*/
 
     a,
     a:visited,
@@ -58,7 +58,7 @@
 }
 
 .site-content .post-navigation {
-  padding-left: 30px;
+  padding-left: 60px;
 
   .post-navigation-group:first-child h4 {
     margin-top: 0px;
