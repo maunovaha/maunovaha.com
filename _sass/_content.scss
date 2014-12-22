@@ -1,13 +1,13 @@
 .site-content {
   max-width: 1024px;
-  margin: 30px auto;
+  margin: 40px auto; /* 51px is height of a header */
   padding: 0px 30px;
 }
 
 .site-content .post {
   .post-header {
     border-bottom: 1px solid #eee;
-    margin-bottom: 27px;
+    margin-bottom: 40px;
   }
 
   .post-header .post-title {
@@ -59,18 +59,21 @@
 
 .site-content .post-navigation {
   padding-left: 60px;
+  /*text-align: right;*/
 
   .post-navigation-group:first-child h4 {
     margin-top: 0px;
   }
 
   .post-navigation-group h4 {
-    /*margin-bottom: 10px;*/
+    line-height: 42px;
+    margin: 13.78000069px 0px;
   }
 
   .post-navigation-group ul {
     margin: 0px;
     padding: 0px;
+    color: #E0E0E0;
   }
 
   .post-navigation-group ul li {
@@ -94,8 +97,10 @@
 
 @media screen and (min-width: 64em) {
 
+  /*
   .site-content {
     margin: 60px auto;
   }
+  */
 
 }
