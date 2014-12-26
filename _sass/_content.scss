@@ -1,6 +1,6 @@
 .site-content {
   max-width: 1024px;
-  margin: 40px auto; /* 51px is height of a header */
+  margin: 40px auto;
   padding: 0px 30px;
 }
 
@@ -35,11 +35,13 @@
     }
 
     .post-tag {
+      /*
       color: #fff;
       background: #5aba59;
       padding: 4px 8px;
       margin-left: 2px;
       text-transform: lowercase;
+      */
     }
 
     /*
@@ -78,19 +80,23 @@
 
   .post-navigation-group ul li {
     a {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     a,
     a:visited,
     a:active {
       text-decoration: none;
-      color: #3D92C9
+      color: #3D92C9;
     }
 
     a:hover {
       text-decoration: underline;
     }
+  }
+
+  .tags-group ul li {
+    margin-bottom: 12px;
   }
 
 }
@@ -103,4 +109,21 @@
   }
   */
 
+}
+
+.tag {
+  /*background: #e0eaf1;*/
+  background: #fff;
+  /*border: 1px solid #4a6b82;*/
+  /*border-right: 1px solid #b3cee1;
+  border-bottom: 1px solid #b3cee1;*/
+  border: 1px solid #3D92C9;
+  padding: 6px;
+  border-radius: 0px;
+}
+
+a.tag,
+a.tag:visited,
+a.tag:active {
+  color: #3D92C9;
 }
