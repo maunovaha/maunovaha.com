@@ -1,12 +1,25 @@
 footer {
   border-top: 1px solid #eee;
   margin-top: 40px;
+  background-image: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+  color: #fff;
 }
 
 .site-footer {
-  max-width: 1024px;
-  margin: 40px auto;
-  padding: 0px 30px;
+  max-width: 750px;
+  margin: 0px auto;
+  padding: 20px 30px;
   text-align: center;
   font-size: 14px;
+
+  h4 {
+    margin-top: 20px;
+    color: #fff;
+  }
+}
+
+.site-footer-copyright {
+
+
+
 }

@@ -29,3 +29,7 @@ TODAY:
   we include js to teach media queries
 
 - Considering taking proper build of pure.css and the grid!
+
+- Make welcome aboard footer to have a picture of landscape with a boat..!?
+  - Then make upper side of the page to have part of the footer sky
+  - As an alternative use current bg but make it as a ground of dirt/grass
