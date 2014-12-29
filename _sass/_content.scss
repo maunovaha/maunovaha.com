@@ -6,9 +6,6 @@
 
 .site-content .post {
   .post-header {
-    /* border-bottom: 1px solid #eee; */
-    /*border-left: 1px solid #4D4D4D;
-    padding-left: 20px;*/
     margin-bottom: 40px;
   }
 
@@ -20,7 +17,6 @@
   .post-header .post-meta {
     color: #999;
     font-size: 14px;
-    /*margin-top: 20px;*/
 
     a,
     a:visited,
@@ -35,36 +31,12 @@
     .post-author {
       color: #3D92C9;
     }
-
-    .post-tag {
-      font-size: 12px;
-      /*
-      color: #fff;
-      background: #5aba59;
-      padding: 4px 8px;
-      margin-left: 2px;
-      text-transform: lowercase;
-      */
-    }
-
-    /*
-    a,
-    a:visited,
-    a:hover,
-    a:active {
-      text-decoration: none;
-      color: #fff;
-      background: #5aba59;
-      padding: 4px 8px;
-      margin-left: 2px;
-    }
-    */
   }
 }
 
 .site-content .post-navigation {
   padding-left: 60px;
-  /*text-align: right;*/
+  /* text-align: right; */
 
   .post-navigation-group:first-child h4 {
     margin-top: 0px;
@@ -115,24 +87,13 @@
 }
 
 .tag {
-  /*background: #e0eaf1;*/
-  /*background: #fff;*/
-  /*border: 1px solid #4a6b82;*/
-  /*border-right: 1px solid #b3cee1;
-  border-bottom: 1px solid #b3cee1;*/
-  /*border: 1px solid #3D92C9;*/
-
   padding: 4px 6px;
-  border-radius: 0px;
   background: #e0eaf1;
-  border-right: 1px solid #b3cee1;
-  border-bottom: 1px solid #b3cee1;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 a.tag,
 a.tag:visited,
 a.tag:active {
-  /*color: #3D92C9;*/
   color: #4a6b82;
 }
