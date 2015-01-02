@@ -1,30 +1,21 @@
 .site-header {
-  border-top: 3px solid #4D4D4D;
-  /*background: #000;*/
+  border-top: 3px solid #3A4145;
   border-bottom: 1px solid #eee;
-  /*padding: 12px 30px;
-  color: #fff;
-  max-width: 750px;
-  margin: 0 auto;*/
-  /* border-bottom: 1px solid #eee; */
 }
 
 .site-header .content {
   padding: 20px 30px;
-  /* color: #fff; */
-  /*max-width: 750px;*/
   margin: 0 auto;
-  /*text-align: center;*/
 
   a,
   a:visited,
   a:hover,
   a:active {
     text-transform: lowercase;
+    color: #3A4145;
   }
 
   .logo {
-    font-weight: bold;
     display: inline-block;
     *display: inline;
     zoom: 1;
@@ -67,7 +58,7 @@
   }
 
   ul li a.selected {
-    /*text-decoration: none;*/
+    text-decoration: underline;
   }
 }
 

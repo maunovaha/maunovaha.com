@@ -6,25 +6,13 @@
 
 body {
   line-height: 1.7em;
-  color: #5b5b5b;
+  color: #3A4145;
   font-size: 16px;
-  font-weight: 300;
-  -webkit-text-size-adjust: 100%;
 }
 
 html, body, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-label {
-  color: #4D4D4D;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 a,
@@ -32,9 +20,6 @@ a:visited,
 a:hover,
 a:active {
   color: #E9811B;
-  /* color: #4a6b82; */
-  /* color: #3D92C9; */
-  /* #E9811B */
 }
 
 a,
@@ -50,16 +35,3 @@ a:hover {
 .no-margin {
   margin: 0px !important;
 }
-
-/*
-h1 {
-  font-size: 32px;
-}
-*/
-
-/*
-.top-menu-bg {
-  height: 407px;
-  background: #fff url("/assets/header-bg.png") no-repeat top left;
-}
-*/
