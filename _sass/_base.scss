@@ -7,6 +7,14 @@
 body {
   line-height: 1.7em;
   color: #5b5b5b;
+  font-size: 16px;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -23,7 +31,8 @@ a,
 a:visited,
 a:hover,
 a:active {
-  color: #4a6b82;
+  color: #E9811B;
+  /* color: #4a6b82; */
   /* color: #3D92C9; */
   /* #E9811B */
 }
