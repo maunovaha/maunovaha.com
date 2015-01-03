@@ -3,9 +3,10 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-// Here should be files which every page needs
-// Use later own files for index and blog etc.?
+// Variables
+// TODO: Add these, less hard-coding..
+
+// Imports styles for every page
 @import
   "pure",
   "grids-responsive",

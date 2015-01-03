@@ -38,9 +38,11 @@
   padding-left: 60px;
   /* text-align: right; */
 
+  /*
   .post-navigation-group:first-child h4 {
     margin-top: 0px;
   }
+  */
 
   .post-navigation-group h4 {
     line-height: 42px;
@@ -50,19 +52,17 @@
   .post-navigation-group ul {
     margin: 0px;
     padding: 0px;
-    color: #E0E0E0;
   }
 
   .post-navigation-group ul li {
-    a {
-      font-size: 12px;
+    a, span {
+      font-size: 14px;
     }
 
     a,
     a:visited,
     a:active {
       text-decoration: none;
-      color: #3D92C9;
     }
 
     a:hover {
@@ -71,7 +71,12 @@
   }
 
   .tags-group ul li {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+  }
+
+  .tags-group ul li span {
+    color: #999;
+    padding: 0px 4px;
   }
 
 }
@@ -86,19 +91,6 @@
 
 }
 
-.tag {
-  /*padding-left: 3px;*/
-  /*padding: 4px 6px;*/
-  /*border: 1px solid #eee;*/
-  /*background: #e0eaf1;*/
-  /*background: #e0eaf1;*/
+a.tag {
   margin-left: 6px;
-}
-
-a.tag,
-a.tag:visited,
-a.tag:active {
-  /* color: #E9811B; */
-  /*color: #4a6b82;*/
-  /*color: #4D4D4D;*/
 }

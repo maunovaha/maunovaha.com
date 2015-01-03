@@ -1,12 +1,22 @@
 # Site settings
+author: Mauno Vähä
+year: 2015
 title: maunovaha.com
-email: maunovaha@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   An epic journey of a man from beginner to pro in programming.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://maunovaha.com" # the base hostname & protocol for your site
 twitter_username: maunovaha
-github_username:  maunovaha
 
 # Build settings
 markdown: kramdown
+encoding: "utf-8"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:year/:month/:day/:title
