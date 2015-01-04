@@ -1,58 +1,32 @@
 BEFORE RELEASE:
 
-SUNDAY:
+MONDAY:
+  - Move CSS styles to .scss
+    - _includes/footer
+    - _includes/head
+    - _includes/header
+    - _layouts/default
+    - _layouts/post
+    - _posts/2015-01-04...
+    - blog/tags
+  - Make site to work with mobile views
+  - Make site to work with IE
+  - Add tweet and other share buttons (3 of total)
+  - Add google analytics (default base template)
 
-  + Make tags to work properly
-    + Fix tag page to show short descriptions of first posts..
-    + Fix posts tag links to be correct
-    - Fix styles of the page to correct .scss file (no inline styles).
-    - Commit..
-
-  - Make archives to work properly
-    -
-    -
-    -
-    -
-
-  - Add next and previous buttons under posts
-
-- Add page (post) specific google analytics tracking
-  - Add link specific analytics tracking for places where it is needed (events with important links like pdf.)
-
-- Add discus commenting for blog posts
-- Fix mobile rules of header
-- Fix to work with IE
-- Add default encoding and timezone (jekyll)
-- Add spacing to all paragraphs in posts etc.
-- Fix language issues of a post
-- Add copyright notice to github (c) Mauno Vähä
+TUESDAY:
+  - Finalize language in the post (rename post dates etc. everything related to textual content).
+  - Add image of yourself
+  - Merge dev to master
+  - Order .com domain
+  - Set .com to function
 
 AFTER RELEASE:
-- Add navigation between posts
-- Move previous projects to same place in github (open source)
+  - Add navigation between posts
+  - Implement archives
+  - Implement tags bar
+  - Move previous projects to same place in github (gamejam) and update LICENSE.md etc.
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-label {
-  color: #34495e;
-}
+--------------------------------------------------------------------------
 
-var game = new Game({
-  stage: "An epic journey of a man from beginner to pro in game programming.",
-  difficulty: DIFFICULTIES.HARD,
-  players: [
-    new Player({
-      nickname: "@maunovaha",
-      items: [ new Item("Computer"),
-               new Item("Coffee"),
-               new Item("Sexy Leather Tunic") ]
-    })
-  ]
-});
-
-// ..and let the journey begin.. http://maunovaha.com
-game.begin();
+http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/

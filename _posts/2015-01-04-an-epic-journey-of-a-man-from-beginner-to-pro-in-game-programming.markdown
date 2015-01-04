@@ -7,7 +7,9 @@ tags:
 - 2d-morpg
 ---
 
+<!--
 <img alt="Mauno's picture" src="/assets/posts/2015-01-04/journey.png">
+-->
 
 <p>Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.</p>
 
