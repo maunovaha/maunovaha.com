@@ -3,14 +3,10 @@ BEFORE RELEASE:
 SUNDAY:
 
   + Make tags to work properly
-    + Listed correctly with posts
-    + Create a tags page
-    > Fix tag navigation to have correctly x 2 etc.
-    - Fix to display only 5 newest
-    - Fix tag page to list correctly
-    - Fix tag page to have proper x 2
-    - Fix tag page header etc. "page header?" styles
-      - Fix blog post tag header to have that line too
+    + Fix tag page to show short descriptions of first posts..
+    + Fix posts tag links to be correct
+    - Fix styles of the page to correct .scss file (no inline styles).
+    - Commit..
 
   - Make archives to work properly
     -
@@ -44,3 +40,19 @@ h6,
 label {
   color: #34495e;
 }
+
+var game = new Game({
+  stage: "An epic journey of a man from beginner to pro in game programming.",
+  difficulty: DIFFICULTIES.HARD,
+  players: [
+    new Player({
+      nickname: "@maunovaha",
+      items: [ new Item("Computer"),
+               new Item("Coffee"),
+               new Item("Sexy Leather Tunic") ]
+    })
+  ]
+});
+
+// ..and let the journey begin.. http://maunovaha.com
+game.begin();
