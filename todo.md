@@ -1,11 +1,8 @@
 BEFORE RELEASE:
 
-MONDAY:
-  - Make site to work with IE
+TUESDAY:
   - Add tweet and other share buttons (3 of total)
   - Add google analytics (default base template)
-
-TUESDAY:
   - Finalize language in the post (rename post dates etc. everything related to textual content).
   - Merge dev to master
   - Order .com domain
