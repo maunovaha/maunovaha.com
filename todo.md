@@ -1,7 +1,6 @@
 BEFORE RELEASE:
 
 MONDAY:
-  > Make site to work with mobile views
   - Make site to work with IE
   - Add tweet and other share buttons (3 of total)
   - Add google analytics (default base template)

@@ -37,5 +37,17 @@ a:hover {
 }
 
 ul {
-  list-style: circle;
+  list-style: none;
+  padding-left: 0px;
 }
+
+@media screen and (min-width: 35.5em) {
+
+  ul {
+    list-style: circle;
+    padding-left: 40px;
+  }
+
+}
+
+

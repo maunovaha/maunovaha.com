@@ -8,7 +8,7 @@ footer {
 .site-footer {
   max-width: 750px;
   margin: 0px auto;
-  padding: 0px 30px;
+  padding: 0px 20px;
   text-align: center;
   font-size: 14px;
 
@@ -24,6 +24,7 @@ footer {
     font-style: monospace;
     line-height: normal;
     margin: 0px;
+    font-size: 10px;
   }
 
   p.description {
@@ -45,4 +46,20 @@ footer {
   p {
     margin: 0px;
   }
+}
+
+@media screen and (min-width: 23em) {
+
+  .site-footer pre {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 35.5em) {
+
+  .site-footer pre {
+    font-size: 14px;
+  }
+
 }
