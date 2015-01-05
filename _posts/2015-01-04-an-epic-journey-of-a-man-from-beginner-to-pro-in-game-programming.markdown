@@ -7,13 +7,9 @@ tags:
 - 2d-morpg
 ---
 
-<!--
-<img alt="Mauno's picture" src="/assets/posts/2015-01-04/journey.png">
--->
-
 <p>Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.</p>
 
-<h2 style="margin-top: 40px;">About me</h2>
+<h2>About me</h2>
 
 <p>
   I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
@@ -28,7 +24,7 @@ tags:
 </p>
 
 <p>
-  Finally, among studying, I've been working at the IT industry for a while now. I started off by doing a lot of trainee work in companies and simple websites <a href="#">like this</a> to my family and cousins. Later on, I worked as a software designer in the sports technology industry. Today, I am working as a systems specialist in the financial industry. And, if I were to describe my area of expertise: it's web development using Java/Ruby/JavaScript and a like. However, in order to keep this introduction brief, it's easier if you check out my <a href="#" style="font-weight: darker;">linkedin profile</a>.
+  Finally, among studying, I've been working at the IT industry for a while now. I started off by doing a lot of trainee work in companies and simple websites <a href="http://bit.ly/QVZBgs" target="_blank">like this</a> to my family and cousins. Later on, I worked as a software designer in the sports technology industry. Today, I am working as a systems specialist in the financial industry. And, if I were to describe my area of expertise: it's web development using Java/Ruby/JavaScript and a like. However, in order to keep this introduction brief, it's easier if you check out my <a href="http://linkd.in/1AxeVo9" target="_blank">linkedin profile</a>.
 </p>
 
 <p>
@@ -44,7 +40,7 @@ tags:
 </p>
 
 <p>
-  At first, I used to make games using programs, such as Game Maker and RPG Toolkit. Later on I even tried C++/JavaScript/Python and various other things. Hence, a word "tried" is important here, because I often lacked focus, skills and motivation to finish. Sometimes I was just trying to make something too big, too soon. For instance, making of 2D MMORPG as one of the first games wasn't a good idea - it rarely is. For the record, it actually took ten years before I released my first <a href="#">MORPG experiment</a> during a game jam. But even then, it had bugs and didn't work well over wireless networks. Of course, I wanted to know why, so I even made a research about <a href="#">the effect of the internet on multiplayer online game development</a>.
+  At first, I used to make games using programs, such as Game Maker and RPG Toolkit. Later on I even tried C++/JavaScript/Python and various other things. Hence, a word "tried" is important here, because I often lacked focus, skills and motivation to finish. Sometimes I was just trying to make something too big, too soon. For instance, making of 2D MMORPG as one of the first games wasn't a good idea - it rarely is. For the record, it actually took ten years before I released my first <a href="http://bit.ly/1wQrrsG" target="_blank">MORPG experiment</a> during a game jam. But even then, it had bugs and didn't work well over wireless networks. Of course, I wanted to know why, so I even made a research about <a href="bit.ly/1v3sk2q" target="_blank">the effect of the internet on multiplayer game development</a>.
 </p>
 
 <p>
@@ -55,7 +51,7 @@ tags:
   In summary, I feel that I have managed to achieve some great things in my life, but there is still a lot of great things to be achieved, which gets to the main purpose of this website: the epic journey.
 </p>
 
-<h2 style="margin-top: 40px;">The epic journey</h2>
+<h2>The epic journey</h2>
 
 <p><em>In short, the epic journey is about me trying to get better at making games and applications.</em></p>
 
@@ -78,7 +74,7 @@ tags:
 <p><strong>Goal #2: To develop 6 games in a year.</strong></p>
 
 <p>
-  The purpose of this goal is to make me a better game designer, programmer and a human being. You see, games which I have released so far usually s*cks because my process of developing them (often within 48 hours) has been really, really bad. Therefore, I will be trying my best to alter the process I am using to develop games and follow the advices I have read from the internets. For clarification, the games I am developing will be so called minimum viable products (MVPs). Thus, if you are unfamiliar with the term I recommend reading <a href="#">blog post</a> written by the author of onegameamonth. That being said, I initially though that I would like to do onegameamonth challenge this year. But, because the goal #1 is so big - I simply canno't take more than I can scew.
+  The purpose of this goal is to make me a better game designer, programmer and a human being. You see, games which I have released so far usually s*cks because my process of developing them (often within 48 hours) has been really, really bad. Therefore, I will be trying my best to alter the process I am using to develop games and follow the advices I have read from the internets. For clarification, the games I am developing will be so called minimum viable products (MVPs). Thus, if you are unfamiliar with the term I recommend reading <a href="http://bit.ly/13TVmJy" target="_blank">blog post</a> written by the author of <a href="http://bit.ly/1Dbpi3s" target="_blank">onegameamonth</a>. That being said, I initially though that I would like to do onegameamonth challenge this year. But, because the goal #1 is so big - I simply canno't take more than I can scew.
 </p>
 
 <p>

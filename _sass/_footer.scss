@@ -8,13 +8,14 @@ footer {
 .site-footer {
   max-width: 750px;
   margin: 0px auto;
-  padding: 20px 30px;
+  padding: 0px 30px;
   text-align: center;
   font-size: 14px;
 
   h2 {
-    margin-top: 20px;
+    margin: 40px 0px 40px 0px;
     color: #fff;
+    /*margin-bottom: 42px;*/
   }
 
   pre {
@@ -22,7 +23,17 @@ footer {
     word-wrap: normal;
     font-style: monospace;
     line-height: normal;
+    margin: 0px;
   }
+
+  p.description {
+    margin-top: 2px;
+  }
+
+  p.to-keep-updated {
+    margin-top: 0px;
+  }
+
 }
 
 .site-footer-copyright {
