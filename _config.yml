@@ -11,12 +11,13 @@ twitter_username: maunovaha
 # Build settings
 markdown: kramdown
 encoding: "utf-8"
+permalink: /blog/2015/01/06/an-epic-journey-of-a-man-from-beginner-to-pro-in-game-programming
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      permalink: /blog/:year/:month/:day/:title
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#       permalink: /blog/:year/:month/:day/:title

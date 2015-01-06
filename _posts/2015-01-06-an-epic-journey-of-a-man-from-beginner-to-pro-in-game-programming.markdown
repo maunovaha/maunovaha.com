@@ -14,7 +14,7 @@ permalink: /blog/2015/01/06/an-epic-journey-of-a-man-from-beginner-to-pro-in-gam
 <h2>About me</h2>
 
 <p>
-  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously)
+  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
 </p>
 
 <p>
