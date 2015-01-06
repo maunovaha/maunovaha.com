@@ -1,0 +1,7 @@
+  - Move previous projects to same place in github (gamejam) and update LICENSE.md etc.
+  - Add navigation between posts
+  - Use markdown properly
+  - Use sass properly
+  - Implement archives
+  - Implement tags bar
+  - Add RSS feed
