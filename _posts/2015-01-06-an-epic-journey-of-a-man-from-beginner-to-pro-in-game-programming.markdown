@@ -42,7 +42,7 @@ permalink: /blog/2015/01/06/an-epic-journey-of-a-man-from-beginner-to-pro-in-gam
 </p>
 
 <p>
-  At first, I used to make games using programs, such as Game Maker and RPG Toolkit. Later on I even tried C++/JavaScript/Python and various other things. Hence, a word "tried" is important here, because I often lacked focus, skills and motivation to finish. Sometimes I was just trying to make something too big, too soon. For instance, making of 2D MMORPG as one of the first games wasn't a good idea - it rarely is. For the record, it actually took ten years before I released my first <a href="http://bit.ly/1wQrrsG" target="_blank">MORPG experiment</a> during a game jam. But even then, it had bugs and didn't work well over wireless networks. Of course, I wanted to know why, so I even made a research about <a href="bit.ly/1v3sk2q" target="_blank">the effect of the internet on multiplayer game development</a>.
+  At first, I used to make games using programs, such as Game Maker and RPG Toolkit. Later on I even tried C++/JavaScript/Python and various other things. Hence, a word "tried" is important here, because I often lacked focus, skills and motivation to finish. Sometimes I was just trying to make something too big, too soon. For instance, making of 2D MMORPG as one of the first games wasn't a good idea - it rarely is. For the record, it actually took ten years before I released my first <a href="http://bit.ly/1wQrrsG" target="_blank">MORPG experiment</a> during a game jam. But even then, it had bugs and didn't work well over wireless networks. Of course, I wanted to know why, so I even made a research about <a href="http://bit.ly/1v3sk2q" target="_blank">the effect of the internet on multiplayer game development</a>.
 </p>
 
 <p>
