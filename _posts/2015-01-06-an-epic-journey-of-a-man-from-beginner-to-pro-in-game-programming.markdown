@@ -44,7 +44,7 @@ tags:
 </p>
 
 <p>
-  Looking back now, releasing one or two crappy projects is way more important than starting three new ones as a excuse to "make it right this time". Hence, once I started to participate to local game jams and other open hacks held here in Oulu (Finland), I realized that it's okey to show off your crappy projects. After all, it's not like I mastered driving of a bicycle at a first, a third or even a tenth try; Making games nor applications is not easy. Thus, if it would, I wouldn't wanted to be a programmer.
+  Looking back now, releasing one or two crappy projects is way more important than starting three new ones as a excuse to "make it right this time". Hence, once I started to participate to local game jams and other open hacks held here in Oulu (Finland), I realized that it's okey to show off your crappy projects. After all, it's not like I mastered driving of a bicycle at a first, a third or even a tenth try; Making games nor applications is not easy. Thus, if it would, I wouldn't wanted to be a programmer at all.
 </p>
 
 <p>
@@ -68,13 +68,13 @@ tags:
 <p><strong>Goal #1: To develop 2D MORPG from start to finish.</strong></p>
 
 <p>
-  This game will be part of my master thesis work, and I will be giving you more information later on (around January, 2015). But, the primary motivation behind this study is to investigate the suitability of websocket protocol for multiplayer game development. In practise, this means a lot of writing, studying and developing. For this reason, I belive, that goal #2 is something which could fail, but we'll see. Luckily, for you, I am going to write blog posts about the progress and issues I am facing while developing the 2D MORPG. Also, I'll try my best to share links to playable builds of the game. Yet, as I said, more details will follow.
+  This game will be part of my master thesis work, and I will be giving you more information later on. But, the primary motivation behind this study is to investigate the suitability of websocket protocol for multiplayer game development. In practise, this means a lot of writing, studying and developing. For this reason, I belive, that a goal #2 is something which could fail, but we'll see. Luckily, for you, I am going to write blog posts about the progress and issues I am facing while developing the 2D MORPG. Also, I'll try my best to share links to playable builds of the game. Yet, as I said, more details will follow.
 </p>
 
 <p><strong>Goal #2: To develop 6 games in a year.</strong></p>
 
 <p>
-  The purpose of this goal is to make me a better game designer, programmer and a human being. You see, games which I have released so far usually s*cks because my process of developing them (often within 48 hours) has been really, really bad. Therefore, I will be trying my best to alter the process I am using to develop games and follow the advices I have read from the internets. For clarification, the games I am developing will be so called minimum viable products (MVPs). Thus, if you are unfamiliar with the term I recommend reading <a href="http://bit.ly/13TVmJy" target="_blank">blog post</a> written by the author of <a href="http://bit.ly/1Dbpi3s" target="_blank">onegameamonth</a>. That being said, I initially though that I would like to do onegameamonth challenge this year. But, because the goal #1 is so big - I simply canno't take more than I can scew.
+  The purpose of this goal is to make me a better game designer, programmer and a human being. You see, games which I have released so far usually s*cks because my process of developing them (often within 48 hours) has been really, really bad. Therefore, I will be trying my best to alter the process I am using to develop games and follow the advices I have read from other game developers. For clarification, the games I am developing will be so called minimum viable products (MVPs). Thus, if you are unfamiliar with the term I recommend reading <a href="http://bit.ly/13TVmJy" target="_blank">blog post</a> written by the author of <a href="http://bit.ly/1Dbpi3s" target="_blank">onegameamonth</a>. That being said, I initially though that I would like to do onegameamonth challenge this year. But, because the goal #1 is so big - I simply canno't take more than I can chew.
 </p>
 
 <p>

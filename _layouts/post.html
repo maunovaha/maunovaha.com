@@ -14,7 +14,10 @@ layout: default
     {{ content }}
   </article>
 </div>
-
+<div class="post-share pure-u-1">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54abd9e605655107" async="async"></script>
+  <div class="addthis_native_toolbox"></div>
+</div>
 <div class="post-comments pure-u-1">
   <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -34,47 +37,3 @@ layout: default
     </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-
-<!--
-Maybe I enable archives and tags quick-bars later on.. I dont know yet.
-
-{% if site.tags.size > 0 %}
-<div class="post-navigation pure-u-1" style="padding-left: 0px;">
-  <aside>
-    <nav class="tags-group post-navigation-group">
-      <h4 style="border-bottom: 1px solid #eee;">Archives</h4>
-      <ul style="display: none;">
-        <li><a href="#">December 2014</a><span> (13)</span></li>
-        <li><a href="#">Nomember 2014</a><span> (22)</span></li>
-        <li><a href="#">July 2014</a><span> (14)</span></li>
-        <li><a href="#">January 2014</a></li>
-        <li><a href="#">December 2013</a></li>
-        <li><a href="#">...?</a></li>
-      </ul>
-    </nav>
-
-    {% if site.tags.size > 0 %}
-    <nav class="tags-group post-navigation-group">
-      <h4 style="border-bottom: 1px solid #eee;">Tags</h4>
-      <ul style="display: none;">
-        {% capture tags %}{% for tag in site.tags %}#{{ tag[0] }}{% if tag[1].size > 1 %}+{{ tag[1].size }}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-        {% assign sortedtags = tags | split: ',' | sort_by { |k, v| -v } %}
-        {% for tag in sortedtags limit: 5 %}
-          {% assign tag_name = tag %}
-          {% assign tag_count = nil %}
-          {% if tag contains '+' %}
-            {% assign tag_name = tag | split: '+' | first %}
-            {% assign tag_count = tag | split: '+' | last %}
-          {% endif %}
-          <li><a href="/blog/tags/{{ tag_name }}">{{ tag_name }}</a>{% if tag_count %}<span> x {{ tag_count }}</span>{% endif %}</li>
-        {% endfor %}
-        {% if sortedtags.size > 5 %}
-        <li><a href="/blog/tags/">...?</a><span> x {{ sortedtags.size | minus: 5 }}</span></li>
-        {% endif %}
-      </ul>
-    </nav>
-    {% endif %}
-  </aside>
-</div>
-{% endif %}
--->
