@@ -5,6 +5,7 @@ tags:
 - introduction
 - six-games-in-a-year
 - 2d-morpg
+date: 2015-01-06 16:28:00
 ---
 
 <p>Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.</p>
