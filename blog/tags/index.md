@@ -32,6 +32,6 @@ layout: default
   {% endfor %}
 
   <p class="post-navigation">
-    <a href="{{ site.posts.first.url }}">&larr;&nbsp;&nbsp;Go back to blog</a>
+    <a href="{{ site.first_post }}">&larr;&nbsp;&nbsp;Go back to blog</a>
   </p>
 </div>

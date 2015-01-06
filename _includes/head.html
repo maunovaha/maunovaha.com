@@ -15,7 +15,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.redirect %}
     <script>
-      window.location.replace("{{ site.url }}{{ site.posts.first.url }}");
+      window.location.replace("{{ site.url }}{{ site.first_post }}");
     </script>
   {% endif %}
   <!--[if lte IE 8]>
