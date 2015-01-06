@@ -6,7 +6,7 @@ tags:
 - six-games-in-a-year
 - 2d-morpg
 date: 2015-01-06 16:28:00
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/2015/01/06/an-epic-journey-of-a-man-from-beginner-to-pro-in-game-programming
 ---
 
 <p>Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.</p>
@@ -14,7 +14,7 @@ permalink: /blog/:year/:month/:day/:title
 <h2>About me</h2>
 
 <p>
-  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
+  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously)
 </p>
 
 <p>
