@@ -15,6 +15,14 @@ html, body, button, input, select, textarea,
   font-family: 'Open Sans', Helvetica, sans-serif, Arial;
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 a,
 a:visited,
 a:hover,

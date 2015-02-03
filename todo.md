@@ -1,7 +1,13 @@
-  - Move previous projects to same place in github (gamejam) and update LICENSE.md etc.
-  - Add navigation between posts
-  - Use markdown properly
-  - Use sass properly
-  - Implement archives
-  - Implement tags bar
-  - Add RSS feed
+- Add navigation between posts
+- Use markdown properly
+- Use sass properly
+- Implement archives
+- Implement tags bar
+- Add RSS feed
+
+- Add games link to header (and check navigation to work)
+- Make new twitter header
+- Add manlei section
+- Tweet / hype
+- Add linkedin update
+- Update header with slogan.?
