@@ -1,6 +1,7 @@
 ---
 title: Tags
 layout: default
+section: tags
 ---
 
 <div class="pure-u-1">

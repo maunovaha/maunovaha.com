@@ -1,6 +1,7 @@
 ---
 title: An epic journey of a man from beginner to pro in game programming.
 excerpt: Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself. I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously). I've been programming for a quite sometime, many years actually.
+section: blog
 tags:
 - introduction
 - six-games-in-a-year

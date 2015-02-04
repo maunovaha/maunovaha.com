@@ -49,6 +49,14 @@
     float: left;
   }
 
+  ul li:first-child a {
+    margin-left: 0px;
+  }
+
+  ul li {
+    margin-left: 20px;
+  }
+
   /*
   ul li:first-child a {
     padding: 0px 40px;

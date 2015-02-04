@@ -1,6 +1,7 @@
 ---
 title: Games
 layout: default
+section: games
 ---
 
 <div class="pure-u-1">

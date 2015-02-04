@@ -1,9 +1,10 @@
 <header class="site-header">
   <div class="content">
-    <a href="{{ site.first_post}}" class="logo">{{ site.title }}</a>
+    <a href="{{ "/games" }}" class="logo">{{ site.title }}</a>
     <nav>
       <ul>
-        <li><a href="{{ site.first_post }}" class="selected">blog</a></li>
+        <li><a href="{{ "/games" }}" {% if page.section == 'games' %}class="selected"{% endif %}>games</a></li>
+        <li><a href="{{ site.first_post }}" {% if page.section == 'tags' or page.section == 'blog' %}class="selected"{% endif %}>blog</a></li>
       </ul>
     </nav>
   </div>
