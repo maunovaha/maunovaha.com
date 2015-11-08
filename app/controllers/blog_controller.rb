@@ -1,5 +1,8 @@
 class BlogController < ApplicationController
   def index
+    # List all posts summary using paging...
+    # or ..
+    # Show only newest post with "next & previous" links?
   end
 
   def show
