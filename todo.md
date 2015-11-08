@@ -1,6 +1,0 @@
-- Add navigation between posts
-- Use markdown properly
-- Use sass properly
-- Implement archives
-- Implement tags bar
-- Add RSS feed
