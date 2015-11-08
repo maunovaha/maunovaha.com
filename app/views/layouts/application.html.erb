@@ -23,8 +23,18 @@
   </head>
   <body>
 
-  <%= yield %>
-    
+  <header>
+    <h1>Awesome header</h1>
+  </header>
+
+  <main role="main" class="main main-<%= controller_name %>">
+    <%= yield %>
+  </main>
+  
+  <footer>
+    <p>Awesome footer</p>
+  </footer>
+
   <%= javascript_include_tag 'application' %>
   </body>
 </html>
