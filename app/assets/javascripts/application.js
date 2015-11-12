@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require_directory ./utils
+//= require_directory ./blog
+//= require_directory ./home

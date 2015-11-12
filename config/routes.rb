@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-
   # Index
   root 'home#index'
 
   # Blog
+  get  'blog',                          to: 'blog#index'
   get  'blog/:year/:month/:day/:title', to: 'blog#show'
+
+  # Tags
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
