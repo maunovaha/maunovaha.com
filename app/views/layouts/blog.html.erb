@@ -5,7 +5,13 @@
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
   <main role="main" class="main main-<%= controller_name %> pure-g">
-    <%= yield %>
+    <div class="post pure-u-1">
+      <article>
+        <%= render "shared/blog/posts/header" %> 
+        <%= yield %>
+      </article>
+    </div>
+    <%= render "shared/blog/posts/sharing" %>
   </main>
   
   <%= render "shared/footer" %>

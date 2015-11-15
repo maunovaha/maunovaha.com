@@ -1,0 +1,9 @@
+<header>
+  <h1><%= header %></h1>
+  <p class="meta">By <em>Mauno Vähä</em>, posted under 
+    <% tags.each_with_index do |tag, index| %>
+      <a href="/blog/tags/<%= tag %>" class="<% if index == 0 %>no-margin<% end %> tag">
+      <%= tag %></a><% unless index == tags.count - 1 %>,<% end %>
+    <% end %>
+  </p>
+</header>

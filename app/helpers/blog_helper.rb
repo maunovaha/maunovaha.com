@@ -14,4 +14,15 @@ module BlogHelper
   def previous?
     # Has previous post?
   end
+
+  def header
+    # returns header of a post
+    "Example header"
+  end
+
+  private
+
+  def tags
+    ["#example1", "#example2", "#example3"]
+  end
 end
