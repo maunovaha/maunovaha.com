@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+
   def index
     # List all posts summary using paging...
     # or ..
@@ -6,12 +7,21 @@ class BlogController < ApplicationController
   end
 
   def show
+    @blog = Blog.instance.find_by_url!(params)
+
     render "blog/posts/"        \
            "#{params[:year]}/"  \
            "#{params[:month]}/" \
            "#{params[:day]}/"   \
-           "#{params[:title]}"
-  rescue ActionView::MissingTemplate
+           "post"
+  rescue ActionView::MissingTemplate # catch activerecord not found as well?
     not_found!
+  end
+
+  private
+
+  def blog_params
+    # params.permit() # ...
+    # is this needed or not? could return hash for show ...
   end
 end

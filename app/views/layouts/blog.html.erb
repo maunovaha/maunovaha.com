@@ -11,7 +11,9 @@
         <%= yield %>
       </article>
     </div>
-    <%= render "shared/blog/posts/sharing" %>
+    <% if Rails.env.production? %>
+      <%= render "shared/blog/posts/sharing" %>
+    <% end %>
   </main>
   
   <%= render "shared/footer" %>
