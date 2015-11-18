@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+  rescue_from ActionView::MissingTemplate, Blog::PostNotFound, with: :not_found
 
   def index
     # List all posts summary using paging...
@@ -7,21 +8,23 @@ class BlogController < ApplicationController
   end
 
   def show
-    @blog = Blog.instance.find_by_url!(params)
+    @post = Blog.instance.find_post_by_url!(post_url)
+    render "blog/posts/#{post_date}/post"
+  end
 
-    render "blog/posts/"        \
-           "#{params[:year]}/"  \
-           "#{params[:month]}/" \
-           "#{params[:day]}/"   \
-           "post"
-  rescue ActionView::MissingTemplate # catch activerecord not found as well?
-    not_found!
+  protected
+
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
   end
 
   private
 
-  def blog_params
-    # params.permit() # ...
-    # is this needed or not? could return hash for show ...
+  def post_date
+    "#{params[:year]}/#{params[:month]}/#{params[:day]}"
+  end
+
+  def post_url
+    "#{post_date}/#{params[:title]}"
   end
 end

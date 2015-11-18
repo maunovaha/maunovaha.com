@@ -2,7 +2,7 @@ class Post
   attr_reader :date, :title, :published, :tags
 
   def initialize(opts = {})
-    @date      = opts[:date]
+    @date      = opts[:date] # TODO: Create as real date
     @title     = opts[:title]
     @published = opts[:published]
     @tags      = []
@@ -11,13 +11,16 @@ class Post
 
   class << self
     def all(meta)
-      posts = []
-      meta.each { |post| posts << Post.new(post) }
+      posts = {}
+      meta.each do |opts| 
+        post            = Post.new(opts) 
+        posts[post.url] = post
+      end
       posts
     end
   end
 
-  def link
+  def url
     "#{urlsafe_date}/#{urlsafe_title}"
   end
 

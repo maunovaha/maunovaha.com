@@ -1,6 +1,8 @@
 class Blog
   include Singleton
 
+  class PostNotFound < StandardError; end
+
   attr_reader :posts
 
   def initialize
@@ -11,10 +13,7 @@ class Blog
     @posts = Post.all(meta)
   end
 
-  def find_by_url!(params)
-
-    p "Trying to find it with.. #{params}"
-
-    p "My posts: #{@posts.inspect}"
+  def find_post_by_url!(url)
+    @posts[url] or raise PostNotFound.new('Not Found')
   end
 end
