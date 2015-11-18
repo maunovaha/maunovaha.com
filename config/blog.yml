@@ -5,12 +5,28 @@ tags:
   - introduction
   - mmo-server
   - games
-title: "Haha lol wtf"
+title: "My first post"
 --- 
-date: 2015/01/06
+date: 2015/03/08
 published: true
 tags: 
   - introduction
   - mmo-server
   - games
-title: "What this post is about 2"
+title: "My second post"
+--- 
+date: 2016/01/03
+published: true
+tags: 
+  - introduction
+  - mmo-server
+  - games
+title: "My third post"
+--- 
+date: 2016/05/04
+published: true
+tags: 
+  - introduction
+  - mmo-server
+  - games
+title: "My fourth post"

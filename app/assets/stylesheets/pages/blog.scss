@@ -46,4 +46,33 @@ main.main-blog {
     border-bottom: 1px solid #eee;
     padding-bottom: 7px;
   }
+
+  /* Navigation */
+
+  .post-nav {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 24px;
+    font-size: 14px;
+    
+    a {
+      border: 1px solid #ccc;
+      padding: 10px 16px;
+      color: #3A4145;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+
+    a,
+    a:visited,
+    a:active,
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-color: #797979;
+    }
+  }
 }

@@ -8,7 +8,7 @@ class BlogController < ApplicationController
   end
 
   def show
-    @post = Blog.instance.find_post_by_url!(post_url)
+    @post = @blog.find_post_by_url!(post_url)
     render "blog/posts/#{post_date}/post"
   end
 

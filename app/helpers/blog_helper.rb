@@ -1,28 +1,17 @@
 module BlogHelper
-  def next
-    # Return next post url
+  def newer
+    @blog.posts[:all][@post.index - 1]
   end
 
-  def next?
-    # Has next post?
+  def newer?
+    @post.index > 0
   end
 
-  def previous
-    # Return previous post url
+  def older
+    @blog.posts[:all][@post.index + 1]
   end
 
-  def previous?
-    # Has previous post?
-  end
-
-  def header
-    # returns header of a post
-    "Example header"
-  end
-
-  private
-
-  def tags
-    ["#example1", "#example2", "#example3"]
+  def older?
+    @post.index < @blog.posts[:all].count - 1
   end
 end

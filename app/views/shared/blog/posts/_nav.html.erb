@@ -1,0 +1,8 @@
+<div class="post-nav pure-u-1">
+  <% if newer? %>
+    <a href="/blog/<%= newer.url %>">&larr;&nbsp;&nbsp;Next</a>
+  <% end %>
+  <% if older? %>
+    <a href="/blog/<%= older.url %>">Previous&nbsp;&nbsp;&rarr;</a>
+  <% end %>
+</div>
