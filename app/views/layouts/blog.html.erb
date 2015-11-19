@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%= render "shared/head" %>
+  <%= render "partials/head" %>
 
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
   <main role="main" class="main main-<%= controller_name %> pure-g">
     <div class="post pure-u-1">
       <article>
-        <%= render "shared/blog/posts/header" %> 
+        <%= render "partials/blog/posts/header" %> 
         <%= yield %>
       </article>
     </div>
     <% if Rails.env.production? %>
-      <%= render "shared/blog/posts/sharing" %>
+      <%= render "partials/blog/posts/sharing" %>
     <% end %>
-    <%= render "shared/blog/posts/nav" %>
+    <%= render "partials/blog/posts/nav" %>
   </main>
   
-  <%= render "shared/footer" %>
+  <%= render "partials/footer" %>
   </body>
 </html>
