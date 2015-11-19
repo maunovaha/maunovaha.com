@@ -35,7 +35,11 @@ class Post
   end
 
   def url
-    "#{urlsafe_date}/#{urlsafe_title}"
+    "/blog/#{urlsafe_date}/#{urlsafe_title}"
+  end
+
+  def template
+    "blog/posts/#{urlsafe_date}/post"
   end
 
   private

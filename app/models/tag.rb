@@ -8,4 +8,8 @@ class Tag
   def name
     "##{@name}"
   end
+
+  def url
+    "/blog/tags/#{@name}"
+  end
 end
