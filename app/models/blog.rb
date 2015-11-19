@@ -14,7 +14,6 @@ class Blog
   end
 
   def find_post_by_url!(url)
-    # TODO: Do not show posts which are not published yet
     @posts[url] or raise PostNotFound.new('Not Found')
   end
 end
