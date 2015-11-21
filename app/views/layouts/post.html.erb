@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%= render "partials/head" %>
-
+  <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
   <main role="main" class="main main-<%= controller_name %> pure-g">
-    
     <div class="post pure-u-1">
       <article>
 
@@ -49,6 +47,6 @@
     </div>
   </main>
   
-  <%= render "partials/footer" %>
+  <%= render "shared/footer" %>
   </body>
 </html>

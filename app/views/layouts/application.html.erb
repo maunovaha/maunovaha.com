@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%= render "partials/head" %>
-
+  <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
   <header>
@@ -12,6 +11,6 @@
     <%= yield %>
   </main>
   
-  <%= render "partials/footer" %>
+  <%= render "shared/footer" %>
   </body>
 </html>
