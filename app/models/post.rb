@@ -2,7 +2,7 @@ class Post
   attr_reader :date, :title, :published, :tags, :index
 
   def initialize(opts = {})
-    @date      = opts[:date]      # TODO: Create as real date
+    @date      = opts[:date].to_time
     @title     = opts[:title]     
     @published = opts[:published] # Only published posts are displayed
     @index     = opts[:index]     # Order number of the post, e.g. 0 (first post)
@@ -45,7 +45,7 @@ class Post
   private
 
   def urlsafe_date
-    date # TODO: Fix when date at proper format
+    date.strftime("%Y/%m/%d")
   end
 
   def urlsafe_title
