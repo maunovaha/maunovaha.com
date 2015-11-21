@@ -3,76 +3,9 @@ main.main-blog {
   margin: 40px auto;
   padding: 0px 20px;
 
-  /* Post */
+  /* Blog */
 
-  .post {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-top: 40px;
-    }
-  }
+  .blog {
 
-  .post article header {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
-
-    h1 {
-      margin: 0px;
-      line-height: 42px;
-    }
-
-    p.meta {
-      color: #999;
-      font-size: 14px;
-    }
-
-    p.meta a.tag {
-      margin-left: 3px;
-    }
-
-    p.meta a.tag.no-margin {
-      margin: 0px;
-    }
-  }
-
-  /* Sharing */
-
-  .post-sharing {
-    margin-top: 30px; /* 24px; */
-    border-bottom: 1px solid #eee;
-    padding-bottom: 7px;
-  }
-
-  /* Navigation */
-
-  .post-nav {
-    margin-top: 40px;
-    border-top: 1px solid #eee;
-    padding-top: 24px;
-    font-size: 14px;
-    
-    a {
-      border: 1px solid #ccc;
-      padding: 10px 16px;
-      color: #3A4145;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
-    }
-
-    a,
-    a:visited,
-    a:active,
-    a:hover {
-      text-decoration: none;
-    }
-
-    a:hover {
-      border-color: #797979;
-    }
   }
 }

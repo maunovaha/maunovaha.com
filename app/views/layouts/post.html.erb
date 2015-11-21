@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render "partials/head" %>
+
+  <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+
+  <main role="main" class="main main-<%= controller_name %> pure-g">
+    
+    <div class="post pure-u-1">
+      <article>
+
+        <!-- Post header -->
+        <header>
+          <h1><%= @post.title %></h1>
+          <p class="meta">By <em>Mauno Vähä</em>, posted under 
+            <% @post.tags.each_with_index do |tag, index| %>
+              <a href="<%= tag.url %>" class="<% if index == 0 %>no-margin<% end %> tag">
+              <%= tag.name %></a><% unless index == @post.tags.count - 1 %>,<% end %>
+            <% end %>
+          </p>
+        </header>
+
+        <!-- Post body -->
+        <%= yield %>
+
+      </article>
+    </div>
+
+    <!-- Post sharing -->
+    <% if Rails.env.production? %>
+      <div class="post-sharing pure-u-1">
+        <script 
+          type="text/javascript" 
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54abd9e605655107" 
+          async="async">
+        </script>
+        <div class="addthis_native_toolbox"></div>
+      </div>
+    <% end %>
+
+    <!-- Post navigation -->
+    <div class="post-nav pure-u-1">
+      <% if newer? %>
+        <a href="<%= newer.url %>">&larr;&nbsp;&nbsp;Next</a>
+      <% end %>
+      <% if older? %>
+        <a href="<%= older.url %>">Previous&nbsp;&nbsp;&rarr;</a>
+      <% end %>
+    </div>
+  </main>
+  
+  <%= render "partials/footer" %>
+  </body>
+</html>
