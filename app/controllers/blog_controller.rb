@@ -9,7 +9,7 @@ class BlogController < ApplicationController
 
   def show
     @post = @blog.find_post_by_url!(post_url)
-    render  @post.template
+    render @post.template
   end
 
   protected
@@ -20,11 +20,7 @@ class BlogController < ApplicationController
 
   private
 
-  def post_date
-    "#{params[:year]}/#{params[:month]}/#{params[:day]}"
-  end
-
   def post_url
-    "/blog/#{post_date}/#{params[:title]}"
+    "/blog/#{params[:year]}/#{params[:month]}/#{params[:day]}/#{params[:title]}"
   end
 end
