@@ -1,4 +1,4 @@
-header {
+header[role="banner"] {
   background: image-url("header-bg.jpg") center top no-repeat;
   background-size: cover;
   height: 800px;
@@ -12,12 +12,6 @@ header {
       padding: 39px 0px 0px 0px;
       margin: 0px;
     }
-    ul li a:first-child {
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      margin-right: 49px;
-    }
     ul li a {
       font-size: 14px;
       margin-right: 42px;
@@ -27,6 +21,12 @@ header {
       &:focus, 
       &:active {
         color: #fff;
+      }
+      &:first-child {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 49px;
       }
     }
     ul li a.no-margin {
@@ -71,11 +71,37 @@ ul.side-nav {
 }
 
 main.main-home {
+  /*
   max-width: 750px;
   margin: 40px auto;
   padding: 0px 20px;
+  */
 
-  .home {
+  header {
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+
+    h1 {
+      font-size: 30px;
+      padding: 50px 0px;
+      margin: 0px;
+    }
+
+    p {
+      margin: 0px;
+    }
+    p.extra-padding {
+      padding-bottom: 50px;
+    }
+  }
+  
+  header.no-top-border {
+    border-top: none;
+  }
+
+  .content {
 
   }
 }
