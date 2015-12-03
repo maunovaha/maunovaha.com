@@ -3,9 +3,43 @@
   <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
-  <header>
-    <h1>Index header</h1>
+  <!-- Header -->
+  <header role="banner">
+    <!-- Main navigation -->
+    <nav role="navigation">
+      <ul>
+        <li>
+          <a href="#">maunovaha.com</a>
+          <a href="#">Blog</a>
+          <a href="#">Games</a>
+          <a href="#">Others</a>
+          <a href="#" class="no-margin">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Follow link -->
+    <div class="follow-area">
+      <a href="https://twitter.com/maunovaha" class="twitter-follow-button" data-show-count="true">Follow @maunovaha</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+  
+    <!-- Logo -->
+    <div class="logo-area">
+      <%= image_tag("logo.png", alt: "maunovaha logo") %>
+    </div>
   </header>
+
+  <!-- Side navigation -->
+  <!--
+  <ul class="nav-side">
+    <li>
+      <a href="#" class="scroll-to nav-link active" id="nav-section-header" data-scroll-to="scroll-to-top"></a>
+      <a href="#" class="scroll-to nav-link" id="nav-section-info" data-scroll-to="scroll-to-info"></a>
+      <a href="#" class="scroll-to nav-link" id="nav-section-contact" data-scroll-to="scroll-to-contact"></a>
+    </li>
+  </ul>
+  -->
 
   <main role="main" class="main main-<%= controller_name %> pure-g">
     <%= yield %>

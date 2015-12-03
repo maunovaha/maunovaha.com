@@ -6,7 +6,7 @@ class Tag
   end
 
   def name
-    "##{@name}" # make this url safe, no need normal tag names?
+    "##{@name}"
   end
 
   def url
