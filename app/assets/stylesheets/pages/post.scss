@@ -16,29 +16,6 @@ main.main-post {
     }
   }
 
-  .post article header {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
-
-    h1 {
-      margin: 0px;
-      line-height: 42px;
-    }
-
-    p.meta {
-      color: #999;
-      font-size: 14px;
-    }
-
-    p.meta a.tag {
-      margin-left: 3px;
-    }
-
-    p.meta a.tag.no-margin {
-      margin: 0px;
-    }
-  }
-
   /* Sharing */
 
   .post-sharing {

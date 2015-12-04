@@ -1,9 +1,10 @@
 class Post
-  attr_reader :date, :title, :published, :tags, :index
+  attr_reader :date, :title, :published, :tags, :preview, :index
 
   def initialize(opts = {})
     @date      = opts[:date].to_time
-    @title     = opts[:title]     
+    @title     = opts[:title] 
+    @preview   = opts[:preview]    
     @published = opts[:published] # Only published posts are displayed
     @index     = opts[:index]     # Order number of the post, e.g. 0 (first post)
     @tags      = []               

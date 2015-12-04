@@ -16,4 +16,8 @@ class Blog
   def find_post_by_url!(url)
     @posts[url] or raise PostNotFound.new('Not Found')
   end
+
+  def latest_posts
+    @posts[:all].last(2)
+  end
 end

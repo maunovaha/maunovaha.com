@@ -77,7 +77,7 @@ main.main-home {
   padding: 0px 20px;
   */
 
-  header {
+  header.main-header {
     background-color: #f5f5f5;
     text-align: center;
     border-top: 1px solid #d3d3d3;
@@ -96,12 +96,21 @@ main.main-home {
       padding-bottom: 50px;
     }
   }
-  
+
   header.no-top-border {
     border-top: none;
   }
 
-  .content {
+  section.blog .content {
+    margin: 50px auto;
+    max-width: 978px;
+  }
+
+  section.games {
+
+  }
+
+  section.others {
 
   }
 }

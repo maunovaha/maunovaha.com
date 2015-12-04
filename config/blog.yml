@@ -5,7 +5,12 @@ tags:
   - introduction
   - mmo-server
   - games
-title: "My first post"
+title: My first post
+preview: > 
+  Contrary to popular belief, Lorem Ipsum is not simply random text.
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 
+  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
+  in Virginia, looked up one of the more obscure Latin words, consectetur.
 ---
 date: 2015/03/08
 published: false
@@ -13,7 +18,12 @@ tags:
   - introduction
   - mmo-server
   - games
-title: "My second post 2"
+title: My second post 2
+preview: > 
+  Contrary to popular belief, Lorem Ipsum is not simply random text.
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 
+  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
+  in Virginia, looked up one of the more obscure Latin words, consectetur.
 --- 
 date: 2016/01/03
 published: true
@@ -21,7 +31,12 @@ tags:
   - introduction
   - mmo-server
   - games
-title: "My third post"
+title: My third post
+preview: > 
+  Contrary to popular belief, Lorem Ipsum is not simply random text.
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 
+  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
+  in Virginia, looked up one of the more obscure Latin words, consectetur.
 --- 
 date: 2016/05/04
 published: true
@@ -29,4 +44,9 @@ tags:
   - introduction
   - mmo-server
   - games
-title: "My fourth post"
+title: My fourth post
+preview: > 
+  Contrary to popular belief, Lorem Ipsum is not simply random text.
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 
+  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
+  in Virginia, looked up one of the more obscure Latin words, consectetur.
