@@ -11,3 +11,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( pure.css )
 Rails.application.config.assets.precompile += %w( grids-responsive.css )
+Rails.application.config.assets.precompile += %w( font-awesome.css )

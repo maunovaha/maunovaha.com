@@ -14,3 +14,16 @@ a:active {
 a:hover {
   text-decoration: underline;
 }
+
+a.btn-continue-reading {
+  &,
+  &:visited,
+  &:active,
+  &:hover {
+    color: #3A4145;
+  }
+
+  i {
+    margin-left: 6px;
+  }
+}

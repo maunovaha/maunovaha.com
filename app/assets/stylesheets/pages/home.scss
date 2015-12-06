@@ -1,3 +1,5 @@
+/* Header */
+
 header[role="banner"] {
   background: image-url("header-bg.jpg") center top no-repeat;
   background-size: cover;
@@ -75,6 +77,8 @@ ul.side-nav {
 
 }
 
+/* Main content */
+
 main.main-home {
   /*
   max-width: 750px;
@@ -83,16 +87,41 @@ main.main-home {
   */
 
   header.main-header {
-    padding: 0px 20px;
+    padding: 0px 20px 56px 20px;
     background-color: #f5f5f5;
     text-align: center;
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
 
+    /*
+    i.section-icon {
+      border: 1px solid #ccc;
+      padding: 34px;
+      font-size: 30px;
+      display: inline-block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      top: -50px;
+      margin-bottom: -100px;
+    }
+    */
+
     h1 {
       font-size: 28px;
-      padding: 56px 0px 44px 0px;
+      padding: 56px 0px 44px 0px; 
+      /*padding: 20px 0px 44px 0px;*/
       margin: 0px;
+
+      i {
+        background-color: #f5f5f5;
+        /*border: 1px solid #ccc;*/
+        padding: 20px;
+        /*border-radius: 100%;*/
+        /*margin-right: 20px;*/
+      }
     }
 
     p {
@@ -100,11 +129,10 @@ main.main-home {
       font-size: 18px;
       margin: 0px;
     }
-    p.extra-padding {
-      padding-bottom: 56px;
-    }
-    p.extra-margin {
-      margin-bottom: 10px;
+
+    small {
+      color: #A2A2A2;
+      padding-top: 10px;
     }
   }
 
@@ -116,22 +144,34 @@ main.main-home {
     border-bottom: none;
   }
 
-  section.blog .content {
-    margin: 70px auto;
-    max-width: 1100px;
+  /* All sections */
+
+  .content {
+    margin: 70px auto 90px auto;
     padding: 0px 20px;
   }
 
+
+  /* Blog section */
+
+  section.blog .content {
+    max-width: 1100px;
+
+    p.post-preview {
+      margin-bottom: 36px;
+    }
+  }
+
+  /* Games section */
+
   section.games .showcase {
-    height: 640px;
-    /*height: 50vh;*/
+    height: 800px;
+    height: 100vh;
     background-color: #07080A;
   }
 
-  section.games .content {
+  section.games .content, section.others .content {
     max-width: 1348px;
-    margin: 70px auto;
-    padding: 0px 20px;
 
     div.image-wrapper {
       padding: 0px 10px;
@@ -143,7 +183,15 @@ main.main-home {
     }
   }
 
-  section.others {
+  /* Other section */
+
+  section.others .content {
 
   }
+
+  /* About section */
+
+  section.about .content {
+    max-width: 1100px;
+  }  
 }

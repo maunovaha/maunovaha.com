@@ -1,23 +1,26 @@
 <section class="blog">
   <header class="no-top-border main-header">
     <h1>Blog</h1>
-    <p class="extra-padding">The blog provides you information about our ongoing and past projects.</p>
+    <p>The blog provides you information about our ongoing projects.</p>
   </header>
   <div class="content">
-    <% @blog.latest_posts.each do |post| %>
+    <% @blog.latest_posts.each_with_index do |post, index| %>
       <article>
         <!-- Post header -->
         <%= render "blog/post/header", post: post %>
 
         <!-- Post preview -->
-        <p><%= post.preview %> <%= link_to "continue reading", post.url %></p>
+        <p class="post-preview"><%= post.preview %></p>
 
+        <a href="#" class="btn-continue-reading">Continue reading<i class="fa fa-angle-double-right"></i></a>
+
+        <!-- Post aligner -->
+        <% if index == 0 %>
+          <div class="article-aligner"></div>
+        <% end %>
       </article>
-
-      <!-- Post aligner -->
-      <div class="article-aligner"></div>
     <% end %>
-
-    <a href="#">Go to blog&nbsp;&nbsp;&rarr;</a>
   </div>
 </section>
+
+<!--  link_to "continue reading", post.url -->
