@@ -2,10 +2,6 @@ Rails.application.routes.draw do
   # Index
   root 'home#index'
 
-  # Blog legacy (from old site.)
-  get  'blog/2015/01/06/an-epic-journey-of-a-man-from-beginner-to-pro-in-game-programming', 
-        to: 'blog#index'
-
   # Blog
   get  'blog',                          to: 'blog#index'
 

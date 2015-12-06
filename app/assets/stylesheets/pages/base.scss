@@ -1,8 +1,14 @@
+article {
+  padding: 40px; 
+  border: 1px solid #ccc;
+}
+
 article header {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #eee;
 
   h1 {
+    font-size: 28px;
     margin: 0px;
     line-height: 42px;
   }
@@ -19,6 +25,10 @@ article header {
   p.meta a.tag.no-margin {
     margin: 0px;
   }
+}
+
+div.article-aligner {
+  height: 44px;
 }
 
 @import "home";

@@ -3,50 +3,22 @@ date: 2015/01/06
 published: true
 tags: 
   - introduction
-  - mmo-server
-  - games
-title: My first post
+  - six-games-in-a-year
+  - 2d-morpg
+title: An epic journey of a man from beginner to pro in game programming
 preview: > 
-  Contrary to popular belief, Lorem Ipsum is not simply random text.
-  It has roots in a piece of classical Latin literature from 45 BC, making it over 
-  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-  in Virginia, looked up one of the more obscure Latin words, consectetur.
+  Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.
+  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
+  I've been programming for a quite sometime, many years actually...
 ---
 date: 2015/03/08
-published: false
-tags: 
-  - introduction
-  - mmo-server
-  - games
-title: My second post 2
-preview: > 
-  Contrary to popular belief, Lorem Ipsum is not simply random text.
-  It has roots in a piece of classical Latin literature from 45 BC, making it over 
-  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-  in Virginia, looked up one of the more obscure Latin words, consectetur.
---- 
-date: 2016/01/03
 published: true
 tags: 
-  - introduction
+  - website
   - mmo-server
   - games
-title: My third post
+title: Things I have build during the year 2015
 preview: > 
-  Contrary to popular belief, Lorem Ipsum is not simply random text.
-  It has roots in a piece of classical Latin literature from 45 BC, making it over 
-  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-  in Virginia, looked up one of the more obscure Latin words, consectetur.
---- 
-date: 2016/05/04
-published: true
-tags: 
-  - introduction
-  - mmo-server
-  - games
-title: My fourth post
-preview: > 
-  Contrary to popular belief, Lorem Ipsum is not simply random text.
-  It has roots in a piece of classical Latin literature from 45 BC, making it over 
-  2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
-  in Virginia, looked up one of the more obscure Latin words, consectetur.
+  Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.
+  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
+  I've been programming for a quite sometime, many years actually...

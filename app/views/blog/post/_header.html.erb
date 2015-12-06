@@ -1,6 +1,6 @@
 <header>
   <h1><%= post.title %></h1>
-  <p class="meta">By <em>Mauno Vähä</em>, posted under 
+  <p class="meta">January 6, 2015, tagged as 
     <% post.tags.each_with_index do |tag, index| %>
       <a href="<%= tag.url %>" class="<% if index == 0 %>no-margin<% end %> tag">
       <%= tag.name %></a><% unless index == post.tags.count - 1 %>,<% end %>

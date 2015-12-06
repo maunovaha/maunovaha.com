@@ -7,6 +7,9 @@ header[role="banner"] {
   nav {
     max-width: 1200px; /* 1349px; */
     margin: 0 auto;
+    /*
+    margin-left: 39px;
+    */
 
     ul {
       padding: 39px 0px 0px 0px;
@@ -24,8 +27,8 @@ header[role="banner"] {
       }
       &:first-child {
         text-decoration: none;
-        font-weight: bold;
         font-size: 18px;
+        font-weight: 400;
         margin-right: 49px;
       }
     }
@@ -42,10 +45,12 @@ header[role="banner"] {
     z-index: 100;
     background: image-url("header-triangle.png") right top no-repeat;
     height: 158px;
-    width: 260px;
+    width: 300px;
 
     iframe {
+      float: right;
       margin-top: 45px;
+      margin-right: 32px;
     }
   }
 
@@ -78,22 +83,28 @@ main.main-home {
   */
 
   header.main-header {
+    padding: 0px 20px;
     background-color: #f5f5f5;
     text-align: center;
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
 
     h1 {
-      font-size: 30px;
-      padding: 50px 0px;
+      font-size: 28px;
+      padding: 56px 0px 44px 0px;
       margin: 0px;
     }
 
     p {
+      color: #4e4e5a;
+      font-size: 18px;
       margin: 0px;
     }
     p.extra-padding {
-      padding-bottom: 50px;
+      padding-bottom: 56px;
+    }
+    p.extra-margin {
+      margin-bottom: 10px;
     }
   }
 
@@ -101,13 +112,35 @@ main.main-home {
     border-top: none;
   }
 
-  section.blog .content {
-    margin: 50px auto;
-    max-width: 978px;
+  header.no-bottom-border {
+    border-bottom: none;
   }
 
-  section.games {
+  section.blog .content {
+    margin: 70px auto;
+    max-width: 1100px;
+    padding: 0px 20px;
+  }
 
+  section.games .showcase {
+    height: 640px;
+    /*height: 50vh;*/
+    background-color: #07080A;
+  }
+
+  section.games .content {
+    max-width: 1348px;
+    margin: 70px auto;
+    padding: 0px 20px;
+
+    div.image-wrapper {
+      padding: 0px 10px;
+      margin: 0px 0px 20px 0px;
+    }
+
+    div.image-wrapper img {
+      border: 1px solid #000;
+    }
   }
 
   section.others {

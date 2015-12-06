@@ -1,8 +1,7 @@
 <section class="blog">
   <header class="no-top-border main-header">
     <h1>Blog</h1>
-    <p>Many of the friends you know and love used to awesome system to make their things.</p>
-    <p class="extra-padding">So its much better to do something than not.</p>
+    <p class="extra-padding">The blog provides you information about our ongoing and past projects.</p>
   </header>
   <div class="content">
     <% @blog.latest_posts.each do |post| %>
@@ -11,8 +10,14 @@
         <%= render "blog/post/header", post: post %>
 
         <!-- Post preview -->
-        <p><%= post.preview %></p>
+        <p><%= post.preview %> <%= link_to "continue reading", post.url %></p>
+
       </article>
+
+      <!-- Post aligner -->
+      <div class="article-aligner"></div>
     <% end %>
+
+    <a href="#">Go to blog&nbsp;&nbsp;&rarr;</a>
   </div>
 </section>
