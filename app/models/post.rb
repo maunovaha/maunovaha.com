@@ -44,6 +44,10 @@ class Post
     "blog/posts/#{urlsafe_date}/post"
   end
 
+  def readable_date
+    date.strftime("%B %e, %Y")
+  end
+
   private
 
   def urlsafe_date

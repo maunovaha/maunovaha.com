@@ -1,21 +1,30 @@
 /* Header */
 
-header[role="banner"] {
+div.header-wrapper {
   background: image-url("header-bg.jpg") center top no-repeat;
   background-size: cover;
   height: 800px;
   height: 100vh;
+}
+
+header[role="banner"] {
+  background: rgba(51, 50, 68, 0.89);
+  width: 100%;
+  height: 100%;
 
   nav {
-    max-width: 1200px; /* 1349px; */
+    max-width: 1272px; /* 1349px; */
     margin: 0 auto;
     /*
     margin-left: 39px;
     */
 
     ul {
-      padding: 39px 0px 0px 0px;
+      padding: 39px 36px 0px 36px;
       margin: 0px;
+    }
+    ul li {
+      text-align: center;
     }
     ul li a {
       font-size: 14px;
@@ -37,10 +46,14 @@ header[role="banner"] {
     ul li a.no-margin {
       margin-right: 0px;
     }
+    ul li a:first-child {
+      display: none;
+    }
   }
 
   /* TODO: Hide on mobile */
   div.follow-area {
+    display: none;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -73,8 +86,25 @@ header[role="banner"] {
   }
 }
 
-ul.side-nav {
+@media screen and (min-width: 940px) { 
+  header[role="banner"] {
+    div.follow-area {
+      display: block; 
+    }
 
+    nav ul li {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 648px) { 
+  header[role="banner"] nav ul li a:first-child {
+    display: inline;
+  }
+}
+
+ul.side-nav {
 }
 
 /* Main content */

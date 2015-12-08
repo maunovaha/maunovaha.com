@@ -18,9 +18,6 @@ class Blog
   end
 
   def latest_posts
-    p "picking posts.."
-    p posts[:all]
-
     @posts[:all].last(2)
   end
 end

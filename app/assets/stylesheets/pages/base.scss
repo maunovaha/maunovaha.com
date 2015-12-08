@@ -8,6 +8,13 @@ article header {
     font-size: 28px;
     margin: 0px;
     line-height: 42px;
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      color: #3A4145;
+    }
   }
 
   p.meta {

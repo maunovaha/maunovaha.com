@@ -4,31 +4,33 @@
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
   <!-- Header -->
-  <header role="banner">
-    <!-- Main navigation -->
-    <nav role="navigation">
-      <ul>
-        <li>
-          <a href="#">maunovaha.com</a>
-          <a href="#">Blog</a>
-          <a href="#">Games</a>
-          <a href="#">Others</a>
-          <a href="#" class="no-margin">About</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="header-wrapper">
+    <header role="banner">
+      <!-- Main navigation -->
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#">maunovaha.com</a>
+            <a href="#">Blog</a>
+            <a href="#">Games</a>
+            <a href="#">Others</a>
+            <a href="#" class="no-margin">About</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Follow link -->
-    <div class="follow-area">
-      <a href="https://twitter.com/maunovaha" class="twitter-follow-button" data-show-count="true">Follow @maunovaha</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </div>
-  
-    <!-- Logo -->
-    <div class="logo-area">
-      <%= image_tag("logo.png", alt: "maunovaha") %>
-    </div>
-  </header>
+      <!-- Follow link -->
+      <div class="follow-area">
+        <a href="https://twitter.com/maunovaha" class="twitter-follow-button" data-show-count="true">Follow @maunovaha</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+    
+      <!-- Logo -->
+      <div class="logo-area">
+        <%= image_tag("logo.png", alt: "maunovaha") %>
+      </div>
+    </header>
+  </div>
 
   <!-- Side navigation -->
   <!--
