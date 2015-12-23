@@ -1,4 +1,4 @@
-<section class="blog">
+<section class="blog" id="scroll-to-blog">
   <header class="no-top-border main-header">
     <h1>Blog</h1>
     <p>Read the blog to find information about our latest projects.</p>
@@ -12,7 +12,9 @@
         <!-- Post preview -->
         <p class="post-preview"><%= post.preview %></p>
 
-        <a href="#" class="btn-continue-reading">Continue reading<i class="fa fa-angle-double-right"></i></a>
+        <%= link_to post.url, class: "btn-continue-reading" do %>
+          Continue reading<i class="fa fa-angle-double-right"></i>
+        <% end %>
 
         <!-- Post aligner -->
         <% if index == 0 %>

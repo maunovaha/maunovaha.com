@@ -9,6 +9,11 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+
+# JS
+Rails.application.config.assets.precompile += %w( jquery-ui.js )
+
+# CSS
 Rails.application.config.assets.precompile += %w( pure.css )
 Rails.application.config.assets.precompile += %w( grids-responsive.css )
 Rails.application.config.assets.precompile += %w( font-awesome.css )

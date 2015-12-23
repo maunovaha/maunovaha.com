@@ -1,4 +1,4 @@
-/* Blog posts (only header part, its shared) */
+/* Blog posts (Note: only header part because its shared ...) */
 
 article header {
   margin-bottom: 16px;
@@ -47,7 +47,10 @@ footer {
   div.subscribing {
     color: #fff;
     background-color: #252525;
-    height: 400px;
+
+    h1 {
+      padding-top: 56px;
+    }
   }
 
   div.copyrights {

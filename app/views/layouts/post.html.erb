@@ -29,10 +29,14 @@
     <!-- Post navigation -->
     <div class="post-nav pure-u-1">
       <% if newer? %>
-        <a href="<%= newer.url %>">&larr;&nbsp;&nbsp;Next</a>
+        <%= link_to newer.url do %>
+          &larr;&nbsp;&nbsp;Next</a>
+        <% end %>
       <% end %>
       <% if older? %>
-        <a href="<%= older.url %>">Previous&nbsp;&nbsp;&rarr;</a>
+        <%= link_to older.url do %>
+          Previous&nbsp;&nbsp;&rarr;</a>
+        <% end %>
       <% end %>
     </div>
   </main>
