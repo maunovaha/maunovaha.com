@@ -1,5 +1,4 @@
 class SubscribersController < ApplicationController
-
   before_action :accept_html,    only: [ :activate, :cancel ]
   before_action :accept_json,    only: [ :create ]
   before_action :set_subscriber, only: [ :activate, :cancel ]
@@ -14,10 +13,7 @@ class SubscribersController < ApplicationController
     if @subscriber.active?
       render json: @subscriber, status: :ok
     elsif @subscriber.save
-
-      
-
-
+      SubscriberMailer.confirmation_email(@subscriber).deliver_later
       render json: @subscriber, status: :created
     else
       render json: @subscriber.errors, status: :unprocessable_entity

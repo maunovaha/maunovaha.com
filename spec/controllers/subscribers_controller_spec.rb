@@ -3,6 +3,12 @@ require "rails_helper"
 RSpec.describe SubscribersController, :type => :controller do
 
   describe "POST #create" do
+    before(:each) do
+      allow(SubscriberMailer).to receive(:confirmation_email).and_return(
+        double("Mailer", deliver_later: true)
+      ) 
+    end
+
     context "when valid request" do
       before(:each) { include_headers(:json) }
 
@@ -29,6 +35,10 @@ RSpec.describe SubscribersController, :type => :controller do
         it "creates one subscriber" do
           expect(Subscriber.all.count).to eq(1)
         end
+
+        it "sends confirmation email" do
+          expect(SubscriberMailer).to have_received(:confirmation_email)
+        end
       end
       context "then re-enabling subscriber which has been previously unsubscribed" do
         let!(:old_subscriber) { FactoryGirl.create(:subscriber) }
@@ -53,6 +63,10 @@ RSpec.describe SubscribersController, :type => :controller do
         it "doesnt create new, has still one subscriber" do
           expect(Subscriber.all.count).to eq(1)
         end
+
+        it "sends confirmation email" do
+          expect(SubscriberMailer).to have_received(:confirmation_email)
+        end
       end
       context "then subscribing with email address which is already active" do
         let!(:old_subscriber) { FactoryGirl.create(:subscriber, active: true) }
@@ -76,6 +90,10 @@ RSpec.describe SubscribersController, :type => :controller do
 
         it "doesnt create new, has still one subscriber" do
           expect(Subscriber.all.count).to eq(1)
+        end
+
+        it "doesnt send confirmation email" do
+          expect(SubscriberMailer).to_not have_received(:confirmation_email)
         end
       end
     end
@@ -111,6 +129,10 @@ RSpec.describe SubscribersController, :type => :controller do
 
         it "doesnt create the subscriber" do
           expect(Subscriber.all.count).to eq(0)
+        end
+
+        it "doesnt send confirmation email" do
+          expect(SubscriberMailer).to_not have_received(:confirmation_email)
         end
       end
     end
