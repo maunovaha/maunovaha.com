@@ -17,7 +17,6 @@ class SubscribersController < ApplicationController
 
       
 
-      # TODO: Send email... & test it /unit tests/
 
       render json: @subscriber, status: :created
     else
