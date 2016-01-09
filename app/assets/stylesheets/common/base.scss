@@ -26,6 +26,7 @@ html, body, button, input, select, textarea,
   font-family: 'Open Sans', Helvetica, sans-serif, Arial;
 }
 
+@import "helpers";
 @import "a";
 @import "ul";
-@import "helpers";
+@import "input";

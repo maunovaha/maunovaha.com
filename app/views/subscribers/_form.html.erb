@@ -1,0 +1,6 @@
+<%= simple_form_for(@subscriber, remote: true) do |f| %>
+  <%= f.input_field :email, maxlength: 255, placeholder: "Your email address" %>
+  <span>
+    <%= f.button :submit, value: "", class: "fa-input", id: "subscriber_send" %>
+  </span>
+<% end %>

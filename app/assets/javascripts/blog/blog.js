@@ -1,3 +1,4 @@
+/*
 maunovaha.blog = (function(render) {
 
   "use strict";
@@ -11,3 +12,4 @@ maunovaha.blog = (function(render) {
   $(function() { render("blog", actions); });
 
 })(maunovaha.render);
+*/

@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
-  before_action :accept_html,    only: [ :activate, :cancel ]
-  before_action :accept_json,    only: [ :create ]
+  before_action :accept_html,    only: [ :activate, :cancel, :success ]
+  # before_action :accept_json,    only: [ :create ]
   before_action :set_subscriber, only: [ :activate, :cancel ]
 
   def create
@@ -19,6 +19,8 @@ class SubscribersController < ApplicationController
       render json: @subscriber.errors, status: :unprocessable_entity
     end
   end
+
+  def success; end
 
   def activate
     if @subscriber.token_expired?

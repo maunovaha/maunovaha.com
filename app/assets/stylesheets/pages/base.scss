@@ -43,25 +43,124 @@ div.article-aligner {
 
 footer {
   text-align: center;
+  background-color: #1a1a1a;
 
   div.subscribing {
     color: #fff;
-    background-color: #252525;
+    padding: 0px 20px;
 
     h1 {
-      padding-top: 56px;
+      font-size: 28px;
+      margin-top: 56px;
+    }
+
+    p {
+      font-size: 16px; 
+      color: #afafaf;
+    }
+    p.error {
+      color: #d9534f;
+    }
+
+    form {
+      display: table;
+      border-collapse: separate;
+      max-width: 480px;
+      margin: 26px auto;
+      border: 1px solid #525252;
+      -moz-transition: border-color .2s;
+      -o-transition: border-color .2s;
+      -webkit-transition: border-color .2s;
+      transition: border-color .2s;
+
+      input {
+        color: #fff;
+        background-color: #0C0C0C;
+        line-height: 24px;
+        border: 1px solid #0C0C0C;
+      }
+
+      input[type="email"] {
+        width: 100%;
+        display: table-cell;
+      }
+
+      span {
+        width: 1%;
+        display: table-cell;
+        vertical-align: middle; 
+        input[type="submit"] {
+          width: 76px;
+          font-size: 34px;
+          display: inline-block;
+          vertical-align: middle; 
+          overflow: visible;
+          background-color: #00B140;
+          -moz-transition: background-color .2s;
+          -o-transition: background-color .2s;
+          -webkit-transition: background-color .2s;
+          transition: background-color .2s;
+        }
+        input[type="submit"]:hover {
+          background-color: #00CE4A;
+        }
+      }
+    }
+
+    form.focus {
+      border-color: #929292;
+    }
+  }
+
+  div.social {
+    padding: 8px 0px 37px 0px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      letter-spacing: -0.31em;
+
+      li {
+        display: inline-block;
+        letter-spacing: normal;
+      }
+
+      li a {
+        color: #afafaf;
+        font-size: 34px;
+        line-height: 34px;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        -moz-transition: color .2s;
+        -o-transition: color .2s;
+        -webkit-transition: color .2s;
+        transition: color .2s;
+      }
+
+      li a:hover {
+        color: #fff;
+      }
     }
   }
 
   div.copyrights {
-    background-color: #1a1a1a;
+    background-color: #252525;
+    padding: 0px 20px;
 
     p {
+      font-size: 14px;
       padding: 20px 0px;
       margin: 0px;
+      color: #afafaf;
+    }
+    p span {
       color: #fff;
     }
-    p strong {}
+    p span i {
+      margin: 0px 1px;
+    }
   }  
 }
 

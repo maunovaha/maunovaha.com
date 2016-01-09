@@ -20,6 +20,12 @@ gem 'uglifier', '>= 1.3.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Resets styles between browsers
+gem 'normalize-rails'
+
+# Simple and ustomizable html forms
+gem 'simple_form'
+
 # Used for JSON serialization
 gem 'active_model_serializers'
 

@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   # Subscribing
   post 'subscribers',                   to: 'subscribers#create'
+  get  'subscribers/success',           to: 'subscribers#success'
   get  'subscribers/:id',               to: 'subscribers#activate'
   get  'subscribers/:id/cancellation',  to: 'subscribers#cancel'
 end

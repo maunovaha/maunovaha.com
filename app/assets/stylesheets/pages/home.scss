@@ -231,7 +231,6 @@ main.main-home {
     padding: 0px 20px;
   }
 
-
   /* Blog section */
 
   section.blog .content {
@@ -244,10 +243,16 @@ main.main-home {
 
   /* Games section */
 
-  section.games .showcase {
-    height: 800px;
-    height: 100vh;
-    background-color: #07080A;
+  section.games {
+    .showcase {
+      height: 800px;
+      height: 100vh;
+      background-color: #07080A;
+    }
+
+    .content {
+      padding: 0px 10px;
+    }
   }
 
   section.games .content, section.others .content {
@@ -266,7 +271,7 @@ main.main-home {
   /* Other section */
 
   section.others .content {
-
+    padding: 0px 10px;
   }
 
   /* About section */
