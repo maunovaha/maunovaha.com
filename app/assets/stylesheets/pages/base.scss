@@ -49,24 +49,21 @@ footer {
     color: #fff;
     padding: 0px 20px;
 
-    h1 {
+    > h1 {
       font-size: 28px;
       margin-top: 56px;
     }
 
-    p {
+    > p {
       font-size: 16px; 
       color: #afafaf;
-    }
-    p.error {
-      color: #d9534f;
     }
 
     form {
       display: table;
       border-collapse: separate;
       max-width: 480px;
-      margin: 26px auto;
+      margin: 26px auto 0px auto;
       border: 1px solid #525252;
       -moz-transition: border-color .2s;
       -o-transition: border-color .2s;
@@ -89,8 +86,9 @@ footer {
         width: 1%;
         display: table-cell;
         vertical-align: middle; 
+
         input[type="submit"] {
-          width: 76px;
+          width: 70px;
           font-size: 34px;
           display: inline-block;
           vertical-align: middle; 
@@ -101,6 +99,7 @@ footer {
           -webkit-transition: background-color .2s;
           transition: background-color .2s;
         }
+        
         input[type="submit"]:hover {
           background-color: #00CE4A;
         }
@@ -110,10 +109,28 @@ footer {
     form.focus {
       border-color: #929292;
     }
+
+    div.notification {
+      max-width: 478px;
+      margin: 0px auto;
+      border: 1px solid #1a1a1a;
+      text-align: left;
+      display: none;
+      
+      p {
+        margin: 0px;
+        padding: 10px 0px 0px 15px;
+      }
+    }
+
+    div.notification.error {
+      color: #d9534f;
+      display: block;
+    }
   }
 
   div.social {
-    padding: 8px 0px 37px 0px;
+    padding: 37px 0px;
 
     ul {
       list-style-type: none;

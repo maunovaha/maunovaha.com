@@ -36,11 +36,15 @@ maunovaha.subscription = {
   // Initializes and binds actions
   init: function() {
 
+    // Reference to self
+    var that = this;
+
     // Capturing the elements
-    this.elements.$subForm    = $("#new_subscriber");
-    this.elements.$subEmail   = $("#subscriber_email");
-    this.elements.$subBtnSend = $("#subscriber_send");
-    this.elements.$subMessage = "Yo, daaawg!"; // notification area...
+    this.elements.$subForm      = $("#new_subscriber");
+    this.elements.$subEmail     = $("#subscriber_email");
+    this.elements.$subBtnSend   = $("#subscriber_send");
+    this.elements.$subNotify    = $(".notification");
+    this.elements.$subNotifyMsg = $(".notification p");
     
     // Binds form focus highlight
     this.elements.$subForm.on("focusin", function() {
@@ -51,27 +55,48 @@ maunovaha.subscription = {
       $(this).removeClass("focus");
     });
 
-
-    // Binds scrollable clicks to elements with "scroll-to" class
-    /*
-    $(".scroll-to").on("click", function(e) {
-      scrollTo(e, $("#" + $(this).data("scroll-to")));
+    // Binds form submit events
+    this.elements.$subForm.on("ajax:success", function(e, data, status, xhr) {
+      that.onSuccess(that, e, data, status, xhr);
     });
 
-    // Scrolls to given section of the page
-    var scrollTo = function(e, section) {
-      e.preventDefault();
-      $("body, html").animate({ scrollTop: section.offset().top }, 900, "easeInOutQuart", function() {});
-    };
-    */
+    this.elements.$subForm.on("ajax:error", function(e, xhr, status, error) {
+      that.onFailure(that, e, xhr, status, error);
+    });
+  },
 
+  // Called when form submit succeeds
+  onSuccess: function(that, e, data, status, xhr) {
+    if (xhr.status === 201) {
+      window.location.href = "/subscribers/success";
+    } else {
+      that.showError(xhr.status);
+    }
+  },
+
+  // Called when form submit fails
+  onFailure: function(that, e, xhr, status, error) {
+    that.showError(xhr.status);
+  },
+
+  // Shows error for the user below input field
+  showError: function(status) {
+    var msg = "Unexpected error occured, try again later";
+
+    switch (status) {
+      case 200:
+        msg = "Oops, given email address has already subscribed!";
+        break;
+      case 422:
+        msg = "Oops, your email address is invalid";
+        break;
+    }
+
+    this.elements.$subNotifyMsg.text(msg);
+    this.elements.$subNotify.addClass("error");
   },
 
   reset: function() {
     // Clear all
   },
-
-  send: function() {
-    // Send query
-  }
 };

@@ -1,6 +1,4 @@
 class SubscribersController < ApplicationController
-  before_action :accept_html,    only: [ :activate, :cancel, :success ]
-  # before_action :accept_json,    only: [ :create ]
   before_action :set_subscriber, only: [ :activate, :cancel ]
 
   def create
@@ -20,7 +18,8 @@ class SubscribersController < ApplicationController
     end
   end
 
-  def success; end
+  def success
+  end
 
   def activate
     if @subscriber.token_expired?
@@ -37,7 +36,7 @@ class SubscribersController < ApplicationController
   private
 
   def set_subscriber
-    @subscriber = Subscriber.find_by_id_and_token_and_email(
+    @subscriber = Subscriber.find_by_id_and_token_and_email!(
       params[:id],
       params[:token], 
       params[:email]
