@@ -33,6 +33,9 @@ maunovaha.subscription = {
   // DOM elements
   elements: {},
 
+  // Timer handles for loading bar animation
+  timers: {},
+
   // Initializes and binds actions
   init: function() {
 
@@ -45,6 +48,7 @@ maunovaha.subscription = {
     this.elements.$subBtnSend   = $("#subscriber_send");
     this.elements.$subNotify    = $(".notification");
     this.elements.$subNotifyMsg = $(".notification p");
+    this.elements.$loader       = $(".loader");
     
     // Binds form focus highlight
     this.elements.$subForm.on("focusin", function() {
@@ -57,46 +61,105 @@ maunovaha.subscription = {
 
     // Binds form submit events
     this.elements.$subForm.on("ajax:success", function(e, data, status, xhr) {
-      that.onSuccess(that, e, data, status, xhr);
+      that.onSuccess(e, data, status, xhr);
     });
 
     this.elements.$subForm.on("ajax:error", function(e, xhr, status, error) {
-      that.onFailure(that, e, xhr, status, error);
+      that.onFailure(e, xhr, status, error);
+    });
+
+    this.elements.$subForm.on("ajax:beforeSend", function(xhr, settings) {
+      that.onBeforeSend(that, xhr, settings);
+    });
+
+    this.elements.$subForm.on("ajax:complete", function(xhr, status) {
+      that.onComplete(xhr, status);
     });
   },
 
   // Called when form submit succeeds
-  onSuccess: function(that, e, data, status, xhr) {
+  onSuccess: function(e, data, status, xhr) {
     if (xhr.status === 201) {
-      window.location.href = "/subscribers/success";
+      setTimeout(function() { window.location.href = "/subscribers/success"; }, 800);
     } else {
-      that.showError(xhr.status);
+      this.showError(xhr.status);
     }
   },
 
   // Called when form submit fails
-  onFailure: function(that, e, xhr, status, error) {
-    that.showError(xhr.status);
+  onFailure: function(e, xhr, status, error) {
+    this.showError(xhr.status);
+  },
+
+  // Called when request is going to be sent
+  onBeforeSend: function(xhr, settings) {
+    var that = this;
+
+    // Disable inputs
+    that.elements.$subEmail.prop("disabled", true);
+    that.elements.$subBtnSend.prop("disabled", true);
+
+    // Makes illusion of loading
+    this.timers.t1 = setTimeout(function() { that.setLoaded(25) }, 200);
+    this.timers.t2 = setTimeout(function() { that.setLoaded(35) }, 550);
+    this.timers.t3 = setTimeout(function() { that.setLoaded(75) }, 1350);
+  },
+
+  // Called when request is done
+  onComplete: function(xhr, status) {
+    this.setLoaded(100);
   },
 
   // Shows error for the user below input field
   showError: function(status) {
-    var msg = "Unexpected error occured, try again later";
+    var that = this;
 
-    switch (status) {
-      case 200:
-        msg = "Oops, given email address has already subscribed!";
-        break;
-      case 422:
-        msg = "Oops, your email address is invalid";
-        break;
+    // Slight delay makes it nicer
+    setTimeout(function() {
+      var msg = "Unexpected error occured, try again later";
+
+      switch (status) {
+        case 200:
+          msg = "Given email address has already subscribed!";
+          break;
+        case 422:
+          msg = "Oops, your email address is invalid";
+          break;
+      }
+
+      that.elements.$subNotifyMsg.text(msg);
+      that.elements.$subNotify.addClass("error");
+    }, 500);
+  },
+
+  // Sets loading bar progress
+  setLoaded: function(percent) {
+    var that = this;
+
+    this.elements.$loader.addClass("p-" + percent);
+
+    // Automatically reset the loader after a while
+    if (percent === 100) { 
+      setTimeout(function() { 
+        // Enable inputs
+        that.elements.$subEmail.prop("disabled", false);
+        that.elements.$subBtnSend.prop("disabled", false);
+        that.resetLoader(that) 
+      }, 700); 
     }
-
-    this.elements.$subNotifyMsg.text(msg);
-    this.elements.$subNotify.addClass("error");
   },
 
-  reset: function() {
-    // Clear all
-  },
+  // Resets loading bar to start
+  resetLoader: function(that) {
+    // Clear ongoing timers
+    clearTimeout(that.timers.t1);
+    clearTimeout(that.timers.t2);
+    clearTimeout(that.timers.t3);
+
+    // Reset loading back width back to zero
+    that.elements.$loader.removeClass("p-25");
+    that.elements.$loader.removeClass("p-35");
+    that.elements.$loader.removeClass("p-75");
+    that.elements.$loader.removeClass("p-100");
+  }
 };

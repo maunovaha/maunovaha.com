@@ -80,6 +80,7 @@ footer {
       input[type="email"] {
         width: 100%;
         display: table-cell;
+        border-right: none;
       }
 
       span {
@@ -99,9 +100,13 @@ footer {
           -webkit-transition: background-color .2s;
           transition: background-color .2s;
         }
-        
+
         input[type="submit"]:hover {
           background-color: #00CE4A;
+        }
+
+        input[type="submit"]:disabled {
+          background-color: #afafaf !important;
         }
       }
     }
@@ -109,6 +114,12 @@ footer {
     form.focus {
       border-color: #929292;
     }
+
+    /*
+    form.loading {
+      opacity: 0.5;
+    }
+    */
 
     div.notification {
       max-width: 478px;
@@ -160,6 +171,39 @@ footer {
         color: #fff;
       }
     }
+  }
+
+  div.loader {
+    width: 1px;
+    height: 3px;
+    background-color: #1a1a1a;
+    -moz-transition: width .2s;
+    -o-transition: width .2s;
+    -webkit-transition: width .2s;
+    transition: width .2s;
+  }
+
+  div.loader.p-25,
+  div.loader.p-35,
+  div.loader.p-75,
+  div.loader.p-100 {
+    background-color: #00B140;
+  }
+
+  div.loader.p-25 {
+    width: 25%;
+  }
+
+  div.loader.p-35 {
+    width: 35%;
+  }
+
+  div.loader.p-75 {
+    width: 75%;
+  }
+
+  div.loader.p-100 {
+    width: 100%;
   }
 
   div.copyrights {
