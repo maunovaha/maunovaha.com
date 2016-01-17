@@ -4,6 +4,26 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p>Hey, this is confirmation_mailer.html.erb content</p>
+    <p><strong>** This is an automatic message, do not reply. **</strong></p>
+
+    <br />
+
+    <p>Hi,</p>
+
+    <p>You have just subscribed to our newsletter from maunovaha.com.</p>
+    <p>To verify your subscription, click the following link: <a href="<%= @activation_link %>">activate subscription</a> within <strong>next 48 hours</strong>.</p>
+    <p>The verification is needed to prevent people from subscribing with an email address they doesn't own.</p>
+
+    <br />
+
+    <p>Not you?</p>
+    <p>In that case, we are sorry for any inconvenience caused by us and feel free to delete this email.</p>
+
+    <br />
+
+    <p>
+    Kind Regards, <br />
+    - Mauno Vähä
+    </p>
   </body>
 </html>
