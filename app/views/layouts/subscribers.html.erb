@@ -3,10 +3,8 @@
   <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
 
-  <main role="main" class="main main-<%= controller_name %> pure-g">
-    <div class="blog pure-u-1">
-      <%= yield %>
-    </div>
+  <main role="main" class="main main-<%= controller_name %>">
+    <%= yield %>
   </main>
   
   <%= javascript_include_tag 'application' %>

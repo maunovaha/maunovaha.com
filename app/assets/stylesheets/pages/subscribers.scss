@@ -1,0 +1,19 @@
+body[data-controller="subscribers"] {
+  background: rgba(51, 50, 68, 0.89);
+}
+
+main.main-subscribers {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 0px 20px;
+  text-align: center;
+  color: #fff;
+
+  > span {
+    font-size: 96px;
+  }
+
+  p.btn-wrapper {
+    margin-top: 36px;
+  }
+}
