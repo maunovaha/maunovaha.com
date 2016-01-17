@@ -13,20 +13,31 @@ header[role="banner"] {
   height: 100%;
 
   nav {
-    max-width: 1272px; /* 1349px; */
+    max-width: 1272px;
     margin: 0 auto;
-    /* margin-left: 39px; */
 
     ul {
-      padding: 39px 36px 0px 36px;
+      padding: 39px 20px 0px 20px;
       margin: 0px;
-    }
-    ul li {
+      list-style: none;
       text-align: center;
     }
+    ul li {
+      display: inline-block;
+      padding: 0px 10px;
+    }
+    ul li:first-child {
+      display: none;
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
     ul li a {
       font-size: 14px;
-      margin-right: 42px;
 
       &,
       &:hover, 
@@ -34,22 +45,12 @@ header[role="banner"] {
       &:active {
         color: #fff;
       }
-      &:first-child {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 400;
-        margin-right: 49px;
-      }
     }
     ul li a.no-margin {
       margin-right: 0px;
     }
-    ul li a:first-child {
-      display: none;
-    }
   }
 
-  /* TODO: Hide on mobile */
   div.follow-area {
     display: none;
     position: absolute;
@@ -71,6 +72,7 @@ header[role="banner"] {
     /* Change to position absolute? */
     max-width: 461px;
     margin: 0 auto;
+    padding: 0px 20px;
 
     img {
       padding-top: 160px; /* 200px */
@@ -142,15 +144,19 @@ header[role="banner"] {
       display: block; 
     }
 
-    nav ul li {
+    nav ul {
       text-align: left;
     }
   }
 }
 
 @media screen and (min-width: 648px) { 
-  header[role="banner"] nav ul li a:first-child {
-    display: inline;
+  header[role="banner"] nav ul li {
+    padding: 0px 24px;
+
+    &:first-child {
+      display: inline-block;
+    }
   }
 }
 

@@ -9,22 +9,27 @@
       <!-- Main navigation -->
       <nav role="navigation">
         <ul>
-          <!-- FIX EVERY ITEM TO BE OWN LI -->
-          <!--
           <li>
             <%= link_to "maunovaha.com", root_path %>
-            <%= link_to "Blog",          "#", class: "scroll-to", data: { "scroll-to": "scroll-to-blog" } %>
-            <%= link_to "Games",         "#", class: "scroll-to", data: { "scroll-to": "scroll-to-games" } %>
-            <%= link_to "Others",        "#", class: "scroll-to", data: { "scroll-to": "scroll-to-others" } %>
-            <%= link_to "About",         "#", class: "scroll-to no-margin", data: { "scroll-to": "scroll-to-about" } %>
           </li>
-          -->
+          <li>
+            <%= link_to "Blog", "#", class: "scroll-to", data: { "scroll-to": "scroll-to-blog" } %>
+          </li>
+          <li>
+            <%= link_to "Games", "#", class: "scroll-to", data: { "scroll-to": "scroll-to-games" } %>
+          </li>
+          <li>
+            <%= link_to "Others", "#", class: "scroll-to", data: { "scroll-to": "scroll-to-others" } %>
+          </li>
+          <li>
+            <%= link_to "About", "#", class: "scroll-to no-margin", data: { "scroll-to": "scroll-to-about" } %>
+          </li>
         </ul>
       </nav>
 
       <!-- Follow link -->
       <div class="follow-area">
-        <!-- style="display: none;" below is a trick which fixes ugly a href rendering before script executes -->
+        <!-- Using style="display: none;" below is a trick which fixes ugly a href rendering before script executes -->
         <a href="https://twitter.com/maunovaha" style="display: none;" class="twitter-follow-button" data-show-count="true">Follow @maunovaha</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
