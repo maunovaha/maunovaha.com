@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_blog
   before_action :set_subscriber
-
+  
   def set_blog
     @blog ||= Blog.instance
   end

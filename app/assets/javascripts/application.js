@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require_directory ./utils
-//= require_directory ./blog
-//= require_directory ./home
+//= require ./utils/main
+//= require ./shared/footer
+//= require ./home/index
