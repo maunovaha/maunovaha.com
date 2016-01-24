@@ -23,7 +23,7 @@ gem 'jquery-rails'
 # Resets styles between browsers
 gem 'normalize-rails'
 
-# Simple and ustomizable html forms
+# Simple and customizable html forms
 gem 'simple_form'
 
 # Used for JSON serialization
