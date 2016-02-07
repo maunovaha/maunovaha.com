@@ -1,14 +1,27 @@
 <section class="games" id="scroll-to-games">
   <header class="main-header">
     <h1>Games</h1>
-    <p>Here are some games made from scratch during 48 hour game jam events.</p> 
+    <p>The games listed here are made from scratch during 48 hour game jam events.</p> 
     <p><small>(Don't expect them to be feature complete or bug free.)</small></p> 
   </header>
   <div class="content pure-g">
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/bat-story/113963" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/ruined-christmas/122914", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <%= image_tag("/assets/games/ruined-christmas.png", class: "pure-img", alt: "Ruined Christmas") %>
+        </div>
+        <div class="info-overlay">
+          <span class="year">2016</span>
+          <i class="fa fa-external-link"></i>
+          <span class="title">Ruined Christmas</span>
+          <span class="description">" A Santa. Presents. Robbery.</span>
+        </div>
+      <% end %>
+    </div>
+    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+      <%= link_to "http://gamejolt.com/games/bat-story/113963", target: "_blank", class: "img-link" do %>
+        <div class="img-wrapper">
+          <%= image_tag("/assets/games/bat-story.png", class: "pure-img", alt: "Bat Story") %>
         </div>
         <div class="info-overlay">
           <span class="year">2015</span>
@@ -16,12 +29,12 @@
           <span class="title">Bat Story</span>
           <span class="description">" An old vampire. Castle. Freedom.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/smoker/86257" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/smoker/86257", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/smoker.png" class="pure-img" alt="Smoker">
         </div>
         <div class="info-overlay">
           <span class="year">2015</span>
@@ -29,12 +42,12 @@
           <span class="title">Smoker</span>
           <span class="description">" A motorcycle. Tricks. Gameboy.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/chubby-olympics/80249" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/chubby-olympics/80249", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/chubby-olympics.png" class="pure-img" alt="Chubby Olympics">
         </div>
         <div class="info-overlay">
           <span class="year">2015</span>
@@ -42,12 +55,12 @@
           <span class="title">Chubby Olympics</span>
           <span class="description">" A chubby boy. Sports. Arcade.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/protector-of-the-shrine/61666" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/protector-of-the-shrine/61666", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/protector-of-the-shrine.png" class="pure-img" alt="Protector Of The Shrine">
         </div>
         <div class="info-overlay">
           <span class="year">2015</span>
@@ -55,12 +68,12 @@
           <span class="title">Protector Of The Shrine</span>
           <span class="description">" A hero. Monsters. Shrine.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/who-stole-my-underwear/46727" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/who-stole-my-underwear/46727", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/who-stole-my-underwear.png" class="pure-img" alt="Who Stole My Underwear">
         </div>
         <div class="info-overlay">
           <span class="year">2015</span>
@@ -68,12 +81,12 @@
           <span class="title">Who Stole My Underwear</span>
           <span class="description">" John. Mental hospital. Lost underwear.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/alive-kicking/36592" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/alive-kicking/36592", target: "_blank", class: "img-link" do %> 
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/alive-and-kicking.png" class="pure-img" alt="Alive & Kicking">
         </div>
         <div class="info-overlay">
           <span class="year">2014</span>
@@ -81,12 +94,12 @@
           <span class="title">Alive & Kicking</span>
           <span class="description">" A granny. Karate. Survive.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/tinyvikings/27470" class="img-link" target="_blank">
+      <%= link_to "http://gamejolt.com/games/tinyvikings/27470", target: "_blank", class: "img-link" do %> 
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="/assets/games/tiny-vikings.png" class="pure-img" alt="Tiny Vikings">
         </div>
         <div class="info-overlay">
           <span class="year">2014</span>
@@ -94,12 +107,20 @@
           <span class="title">Tiny Vikings</span>
           <span class="description">" A viking. Large world. Fight.</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="http://gamejolt.com/games/stupid-business/104679" class="img-link" target="_blank">
+      <%= link_to "#", class: "img-link", id: "load-more" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="http://placehold.it/480x480/ffffff?text=&nbsp" class="pure-img" alt="View all">
+        </div>
+        <span class="load-more-title">View all (11)</span>
+      <% end %>
+    </div>
+    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 hidden-game">
+      <%= link_to "http://gamejolt.com/games/stupid-business/104679", target: "_blank", class: "img-link" do %>
+        <div class="img-wrapper">
+          <img src="" class="pure-img" alt="Stupid Business" data-hidden-game-url="/assets/games/stupid-business.png">
         </div>
         <div class="info-overlay">
           <span class="year">2014</span>
@@ -107,12 +128,12 @@
           <span class="title">Stupid Business</span>
           <span class="description">" A company. Programmers. Manage.</span>
         </div>
-      </a>
+      <% end %>
     </div>
-    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 display-none">
-      <a href="http://gamejolt.com/games/fatking/104169" class="img-link" target="_blank">
+    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 hidden-game">
+      <%= link_to "http://gamejolt.com/games/fatking/104169", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="" class="pure-img" alt="Fatking" data-hidden-game-url="/assets/games/fatking.png">
         </div>
         <div class="info-overlay">
           <span class="year">2013</span>
@@ -120,27 +141,20 @@
           <span class="title">Fatking</span>
           <span class="description">" A fat king. Monsters. Eat.</span>
         </div>
-      </a>
+      <% end %>
     </div>
-    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 display-none">
-      <a href="http://gamejolt.com/games/failing-with-girls/105153" class="img-link" target="_blank">
+    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 hidden-game">
+      <%= link_to "http://gamejolt.com/games/failing-with-girls/105153", target: "_blank", class: "img-link" do %>
         <div class="img-wrapper">
-          <img src="https://p5b4y2t6.ssl.hwcdn.net/screenshot-thumbnail/3100x2000/210463.jpg" class="pure-img" alt="">
+          <img src="" class="pure-img" alt="Failing With Girls" data-hidden-game-url="/assets/games/failing-with-girls.png">
         </div>
         <div class="info-overlay">
           <span class="year">2012</span>
           <i class="fa fa-external-link"></i>
           <span class="title">Failing With Girls</span>
-          <span class="description">" A single man. Girl. Date.</span>
+          <span class="description">" A single man. Girl. Dates.</span>
         </div>
-      </a>
-    </div>
-    <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <a href="#" class="img-link" style="border: 1px solid #3A4145;">
-        <div class="img-wrapper">
-          <img src="http://placehold.it/640x480/ffffff/000000" class="pure-img" alt="">
-        </div>
-      </a>
+      <% end %>
     </div>
   </div>
 </section>

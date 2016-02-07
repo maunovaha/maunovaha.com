@@ -1,7 +1,7 @@
 <section class="blog" id="scroll-to-blog">
   <header class="no-top-border main-header">
     <h1>Blog</h1>
-    <p>Read the blog to find information about our latest projects.</p>
+    <p>The blog contains information about our past and ongoing projects.</p>
   </header>
   <div class="content">
     <% @blog.latest_posts.each_with_index do |post, index| %>
@@ -24,5 +24,3 @@
     <% end %>
   </div>
 </section>
-
-<!--  link_to "continue reading", post.url -->

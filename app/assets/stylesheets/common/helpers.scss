@@ -10,6 +10,14 @@
   font-family: FontAwesome, 'Open Sans', Helvetica, sans-serif, Arial;
 }
 
+.visible {
+  opacity: 1 !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
 .display-none {
-  display: none;
+  display: none !important;
 }

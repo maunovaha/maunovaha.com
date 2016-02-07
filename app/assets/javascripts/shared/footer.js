@@ -40,12 +40,10 @@ maunovaha.shared.footer = (function(mv) {
 
       // Binds form submit events
       this.$elements.subForm.on("ajax:success", function(e, data, status, xhr) {
-        console.log("2");
         that.onSuccess(e, data, status, xhr);
       });
 
       this.$elements.subForm.on("ajax:error", function(e, xhr, status, error) {
-        console.log("2");
         that.onFailure(e, xhr, status, error);
       });
 
@@ -54,7 +52,6 @@ maunovaha.shared.footer = (function(mv) {
       });
 
       this.$elements.subForm.on("ajax:complete", function(xhr, status) {
-        console.log("3");
         that.onComplete(xhr, status);
       });
     },
