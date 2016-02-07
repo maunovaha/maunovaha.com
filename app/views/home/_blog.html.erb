@@ -6,6 +6,11 @@
   <div class="content">
     <% @blog.latest_posts.each_with_index do |post, index| %>
       <article>
+        <!-- Post aligner -->
+        <% if index == 1 %>
+          <div class="article-aligner"></div>
+        <% end %>
+        
         <!-- Post header -->
         <%= render "blog/post/header", post: post %>
 
@@ -14,11 +19,6 @@
 
         <%= link_to post.url, class: "btn-continue-reading" do %>
           Continue reading<i class="fa fa-angle-double-right"></i>
-        <% end %>
-
-        <!-- Post aligner -->
-        <% if index == 0 %>
-          <div class="article-aligner"></div>
         <% end %>
       </article>
     <% end %>

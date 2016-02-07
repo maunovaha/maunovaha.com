@@ -5,7 +5,7 @@ tags:
   - introduction
   - six-games-in-a-year
   - 2d-morpg
-title: An epic journey of a man from beginner to pro in game programming
+title: blog 1
 preview: > 
   Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.
   I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
@@ -17,7 +17,19 @@ tags:
   - website
   - mmo-server
   - games
-title: Things I have build during the year 2015
+title: blog 2
+preview: > 
+  Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.
+  I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).
+  I've been programming for a quite sometime, many years actually...
+---
+date: 2015/04/05
+published: true
+tags: 
+  - website
+  - lol
+  - jouni
+title: blog 3
 preview: > 
   Hi, I'm Mauno Vähä and I have an interesting journey ahead. But first, let me briefly introduce myself.
   I'm a 28 years old, programmer by work/hobby, student, CS:GO player and a dude (obviously).

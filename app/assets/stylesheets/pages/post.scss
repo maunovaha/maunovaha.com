@@ -19,7 +19,7 @@ main.main-post {
   /* Sharing */
 
   .post-sharing {
-    margin-top: 30px; /* 24px; */
+    margin-top: 30px;
     border-bottom: 1px solid #eee;
     padding-bottom: 7px;
   }
@@ -31,27 +31,23 @@ main.main-post {
     border-top: 1px solid #eee;
     padding-top: 24px;
     font-size: 14px;
-    
-    /*
+
     a {
-      border: 1px solid #ccc;
-      padding: 10px 16px;
-      color: #3A4145;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
+      font-size: 14px;
+    }
+    
+    a.btn-next {
+      float: right;
+      i {
+        margin-left: 6px;
+      }
     }
 
-    a,
-    a:visited,
-    a:active,
-    a:hover {
-      text-decoration: none;
+    a.btn-previous {
+      float: left;
+      i {
+        margin-right: 6px;
+      }
     }
-
-    a:hover {
-      border-color: #797979;
-    }
-    */
   }
 }

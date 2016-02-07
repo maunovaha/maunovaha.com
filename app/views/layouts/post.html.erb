@@ -28,14 +28,14 @@
 
     <!-- Post navigation -->
     <div class="post-nav pure-u-1">
-      <% if newer? %>
-        <%= link_to newer.url do %>
-          &larr;&nbsp;&nbsp;Next</a>
+      <% if prev_post? %>
+        <%= link_to prev_post.url, class: "btn-previous" do %>
+          <i class="fa fa-long-arrow-left"></i>Previous
         <% end %>
       <% end %>
-      <% if older? %>
-        <%= link_to older.url do %>
-          Previous&nbsp;&nbsp;&rarr;</a>
+      <% if next_post? %>
+        <%= link_to next_post.url, class: "btn-next" do %>
+          Next<i class="fa fa-long-arrow-right"></i>
         <% end %>
       <% end %>
     </div>

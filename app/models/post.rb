@@ -31,7 +31,6 @@ class Post
           posts[post.url] = post
         end
       end
-      posts[:all] = posts[:all].reverse # Needed as blog.yml lists older posts first
       posts
     end
   end

@@ -1,17 +1,17 @@
 module BlogHelper
-  def newer
-    @blog.posts[:all][@post.index - 1]
+  def prev_post?
+    !prev_post.nil?
   end
 
-  def newer?
-    @post.index > 0
+  def prev_post
+    @blog.posts[:all][@post.index - 1] unless @post.index == 0
   end
 
-  def older
+  def next_post?
+    !next_post.nil?
+  end
+
+  def next_post
     @blog.posts[:all][@post.index + 1]
-  end
-
-  def older?
-    @post.index < @blog.posts[:all].count - 1
   end
 end

@@ -17,7 +17,7 @@ class Blog
     @posts[url] or raise PostNotFound.new('Not Found')
   end
 
-  def latest_posts
-    @posts[:all].last(2)
+  def latest_posts(count = 2)
+    @posts[:all].reverse.first(count)
   end
 end
