@@ -15,5 +15,4 @@ Rails.application.config.assets.precompile += %w( jquery-ui.js )
 
 # CSS
 Rails.application.config.assets.precompile += %w( pure.css )
-Rails.application.config.assets.precompile += %w( grids-responsive.css )
 Rails.application.config.assets.precompile += %w( font-awesome.css )

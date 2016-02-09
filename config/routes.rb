@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get  'blog/:year/:month/:day/:title', to: 'post#show'
 
   # Tags
+  get  'blog/tags',                     to: 'tags#index'
 
   # Subscribing
   post 'subscribers',                   to: 'subscribers#create'

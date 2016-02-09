@@ -75,7 +75,6 @@ GEM
     minitest (5.8.3)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
-    normalize-rails (3.0.3)
     pg (0.18.4)
     puma (2.15.3)
     rack (1.6.4)
@@ -169,7 +168,6 @@ DEPENDENCIES
   factory_girl_rails
   jquery-rails
   letter_opener
-  normalize-rails
   pg
   puma
   rails (= 4.2.5)
