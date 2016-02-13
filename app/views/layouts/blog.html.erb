@@ -2,11 +2,10 @@
 <html lang="en">
   <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+  <%= render "blog/header" %>
 
-  <main role="main" class="main main-<%= controller_name %> pure-g">
-    <div class="blog pure-u-1">
-      <%= yield %>
-    </div>
+  <main role="main" class="main main-blog main-<%= controller_name %>">
+    <%= yield %>
   </main>
   
   <%= render "shared/footer" %>

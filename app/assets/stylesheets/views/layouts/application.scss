@@ -1,0 +1,119 @@
+div.header-application {
+  background: image-url("header-bg.jpg") center top no-repeat;
+  background-size: cover;
+  height: 800px;
+
+  header[role="banner"] {
+    background: rgba(51, 50, 68, 0.89);
+    width: 100%;
+    height: 100%;
+
+    nav {
+      max-width: 1272px;
+      margin: 0 auto;
+
+      ul {
+        padding: 39px 20px 0px 20px;
+        margin: 0px;
+        list-style: none;
+        text-align: center;
+      }
+      ul li {
+        display: inline-block;
+        padding: 0px 10px;
+      }
+      ul li:first-child {
+        display: none;
+
+        a {
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+      ul li a {
+        font-size: 14px;
+
+        &,
+        &:hover, 
+        &:focus, 
+        &:active {
+          color: #fff;
+        }
+      }
+      ul li a.no-margin {
+        margin-right: 0px;
+      }
+    }
+
+    div.follow-area {
+      display: none;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 100;
+      background: image-url("header-triangle.png") right top no-repeat;
+      height: 158px;
+      width: 300px;
+
+      iframe {
+        float: right;
+        margin-top: 45px;
+        margin-right: 32px;
+      }
+    }
+
+    div.logo-area {
+      max-width: 461px;
+      margin: 0 auto;
+      padding: 0px 20px;
+
+      img {
+        padding-top: 160px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+      }
+    }
+
+    div.arrow { 
+      text-align: center;
+      font-size: 34px; 
+      margin: 130px 0px 0px 0px;
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        padding: 20px 30px;
+        color: #FFF;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 940px) { 
+  div.header-application header[role="banner"] {
+    div.follow-area {
+      display: block; 
+    }
+
+    nav ul {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 648px) { 
+  div.header-application header[role="banner"] nav ul li {
+    padding: 0px 24px;
+
+    &:first-child {
+      display: inline-block;
+    }
+  }
+}

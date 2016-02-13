@@ -4,15 +4,15 @@
     <p>The blog contains information about our past and ongoing projects.</p>
   </header>
   <div class="content">
-    <% @blog.latest_posts.each_with_index do |post, index| %>
-      <article>
+    <% @blogger.latest_posts.each_with_index do |post, index| %>
+      <article class="post">
         <!-- Post aligner -->
         <% if index == 1 %>
-          <div class="article-aligner"></div>
+          <div class="post-aligner"></div>
         <% end %>
         
         <!-- Post header -->
-        <%= render "blog/post/header", post: post %>
+        <%= render "blog/posts/header", post: post %>
 
         <!-- Post preview -->
         <p class="post-preview"><%= post.preview %></p>

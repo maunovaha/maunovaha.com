@@ -2,17 +2,16 @@
 <html lang="en">
   <%= render "shared/head" %>
   <body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+  <%= render "blog/header" %>
 
-  <main role="main" class="main main-<%= controller_name %> pure-g">
-    <div class="post pure-u-1">
-      <article>
-        <!-- Post header -->
-        <%= render "blog/post/header", post: @post %>
+  <main role="main" class="main main-blog main-post">
+    <article class="post">
+      <!-- Post header -->
+      <%= render "blog/posts/header", post: @post %>
 
-        <!-- Post body -->
-        <%= yield %>
-      </article>
-    </div>
+      <!-- Post body -->
+      <%= yield %>
+    </article>
 
     <!-- Post sharing -->
     <% if Rails.env.production? %>

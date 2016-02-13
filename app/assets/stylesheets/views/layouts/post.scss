@@ -1,8 +1,53 @@
+article.post {
+  header {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+
+    h1 {
+      font-size: 28px;
+      margin: 0px;
+      line-height: 42px;
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #3A4145;
+      }
+    }
+
+    p.meta {
+      font-size: 14px;
+      color: #4e4e5a;
+    }
+
+    p.meta i {
+      margin-right: 6px;
+    }
+
+    p.meta a.tag {
+      margin-left: 3px;
+    }
+
+    p.meta a.tag.no-margin {
+      margin: 0px;
+    }
+  }
+
+  div.post-aligner {
+    height: 48px;
+  }
+
+  p.post-preview {
+    margin-bottom: 12px;
+  }
+}
+
 main.main-post {
   max-width: 750px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 0px 20px;
-
+    
   /* Post */
 
   .post {

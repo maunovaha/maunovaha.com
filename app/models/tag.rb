@@ -10,6 +10,6 @@ class Tag
   end
 
   def url
-    "/blog/tags/#{@name}"
+    "/blog/tags/##{@name}"
   end
 end

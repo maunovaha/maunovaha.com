@@ -1,20 +1,19 @@
 Rails.application.routes.draw do
-  
-  # Index
+  # Home
   root 'home#index'
 
-  # Blog
-  get  'blog',                          to: 'blog#index'
-
-  # Blog posts
-  get  'blog/:year/:month/:day/:title', to: 'post#show'
-
-  # Tags
-  get  'blog/tags',                     to: 'tags#index'
-
   # Subscribing
-  post 'subscribers',                   to: 'subscribers#create'
-  get  'subscribers/success',           to: 'subscribers#success'
-  get  'subscribers/:id',               to: 'subscribers#activate'
-  get  'subscribers/:id/cancellation',  to: 'subscribers#cancel'
+  post 'subscribers',                  to: 'subscribers#create'
+  get  'subscribers/success',          to: 'subscribers#success'
+  get  'subscribers/:id',              to: 'subscribers#activate'
+  get  'subscribers/:id/cancellation', to: 'subscribers#cancel'
+
+  namespace :blog do
+    # Posts
+    root                               to: 'posts#index'
+    get ':year/:month/:day/:title',    to: 'posts#show'
+
+    # Tags
+    get 'tags',                        to: 'tags#index'
+  end
 end

@@ -1,178 +1,4 @@
-/* Header */
-
-div.header-wrapper {
-  background: image-url("header-bg.jpg") center top no-repeat;
-  background-size: cover;
-  height: 800px;
-  /*height: 100vh;*/
-}
-
-header[role="banner"] {
-  background: rgba(51, 50, 68, 0.89);
-  width: 100%;
-  height: 100%;
-
-  nav {
-    max-width: 1272px;
-    margin: 0 auto;
-
-    ul {
-      padding: 39px 20px 0px 20px;
-      margin: 0px;
-      list-style: none;
-      text-align: center;
-    }
-    ul li {
-      display: inline-block;
-      padding: 0px 10px;
-    }
-    ul li:first-child {
-      display: none;
-
-      a {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 400;
-      }
-    }
-
-    ul li a {
-      font-size: 14px;
-
-      &,
-      &:hover, 
-      &:focus, 
-      &:active {
-        color: #fff;
-      }
-    }
-    ul li a.no-margin {
-      margin-right: 0px;
-    }
-  }
-
-  div.follow-area {
-    display: none;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 100;
-    background: image-url("header-triangle.png") right top no-repeat;
-    height: 158px;
-    width: 300px;
-
-    iframe {
-      float: right;
-      margin-top: 45px;
-      margin-right: 32px;
-    }
-  }
-
-  div.logo-area {
-    /* Change to position absolute? */
-    max-width: 461px;
-    margin: 0 auto;
-    padding: 0px 20px;
-
-    img {
-      padding-top: 160px; /* 200px */
-      /*padding-top: 25vh;*/
-      width: 100%;
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-      height: auto;
-    }
-  }
-
-  div.arrow { 
-    text-align: center;
-    font-size: 34px; 
-    margin: 130px 0px 0px 0px;
-
-    a,
-    a:visited,
-    a:hover,
-    a:active {
-      padding: 20px 30px;
-      color: #FFF;
-      outline: none;
-    }
-  }
-
-  /*
-  ul.nav-side {
-    position: fixed; 
-    z-index: 100; 
-    height: 120px;
-    right: 32px; 
-    top: 50%; 
-    list-style: none; 
-    margin: -60px 0px 0px 0px; 
-    padding: 0px;
-
-    li a { 
-      display: none;
-      text-decoration: none; 
-      width: 12px; 
-      height: 12px; 
-      border-radius: 6px; 
-      border: 1px solid #d3d3d3; 
-      display: block; 
-      margin-bottom: 12px; 
-      -moz-transition: background-color .3s; 
-      -o-transition: background-color .3s; 
-      -webkit-transition: background-color .3s; 
-      transition: background-color .3s; 
-
-      &:hover {
-        background-color: #BBBBBB;
-      }
-    }
-
-    li a.active,
-    li a:hover {
-      border-color: #2D2B26; 
-      background-color: #2D2B26;
-    }
-  }
-  */
-}
-
-@media screen and (min-width: 940px) { 
-  header[role="banner"] {
-    div.follow-area {
-      display: block; 
-    }
-
-    nav ul {
-      text-align: left;
-    }
-  }
-}
-
-@media screen and (min-width: 648px) { 
-  header[role="banner"] nav ul li {
-    padding: 0px 24px;
-
-    &:first-child {
-      display: inline-block;
-    }
-  }
-}
-
-ul.side-nav {
-}
-
-/* Main content */
-
 main.main-home {
-  /*
-  max-width: 750px;
-  margin: 40px auto;
-  padding: 0px 20px;
-  */
-
   header.main-header {
     padding: 0px 20px 56px 20px;
     background-color: #f5f5f5;
@@ -180,34 +6,14 @@ main.main-home {
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
 
-    /*
-    i.section-icon {
-      border: 1px solid #ccc;
-      padding: 34px;
-      font-size: 30px;
-      display: inline-block;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      background-color: #fff;
-      position: relative;
-      top: -50px;
-      margin-bottom: -100px;
-    }
-    */
-
     h1 {
       font-size: 28px;
       padding: 56px 0px 44px 0px; 
-      /*padding: 20px 0px 44px 0px;*/
       margin: 0px;
 
       i {
         background-color: #f5f5f5;
-        /*border: 1px solid #ccc;*/
         padding: 20px;
-        /*border-radius: 100%;*/
-        /*margin-right: 20px;*/
       }
     }
 
@@ -260,7 +66,7 @@ main.main-home {
     }
 
     a.img-link > div.info-overlay {
-      background: rgba(0, 0, 0, 0.3); /* rgba(51, 50, 68, 0.95); */ 
+      background: rgba(0, 0, 0, 0.3);
       position: absolute;
       z-index: 10;
       top: 0px;
@@ -356,10 +162,6 @@ main.main-home {
 
   section.blog .content {
     margin: 60px auto 70px auto;
-
-    p.post-preview {
-      margin-bottom: 12px;
-    }
   }
 
   /* Games and others */
@@ -394,18 +196,14 @@ main.main-home {
 }
 
 @media screen and (min-width: 768px) { 
-  main.main-home {
-    section.about .content div.explanation {
-      text-align: left;
-      padding-left: 20px;
-    }
+  main.main-home section.about .content div.explanation {
+    text-align: left;
+    padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 980px) { 
-  main.main-home {
-    section.about .content div.explanation {
-      padding-left: 0px;
-    }
+  main.main-home section.about .content div.explanation {
+    padding-left: 0px;
   }
 }

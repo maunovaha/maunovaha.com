@@ -1,4 +1,4 @@
-class Blog
+class Blogger
   include Singleton
 
   class PostNotFound < StandardError; end

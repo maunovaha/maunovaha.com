@@ -4,7 +4,7 @@ module BlogHelper
   end
 
   def prev_post
-    @blog.posts[:all][@post.index - 1] unless @post.index == 0
+    @blogger.posts[:all][@post.index - 1] unless @post.index == 0
   end
 
   def next_post?
@@ -12,6 +12,6 @@ module BlogHelper
   end
 
   def next_post
-    @blog.posts[:all][@post.index + 1]
+    @blogger.posts[:all][@post.index + 1]
   end
 end

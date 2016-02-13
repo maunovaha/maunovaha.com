@@ -1,46 +1,3 @@
-/* Blog posts (Note: only header part because its shared ...) */
-
-article header {
-  margin-bottom: 16px;
-  border-bottom: 1px solid #eee;
-
-  h1 {
-    font-size: 28px;
-    margin: 0px;
-    line-height: 42px;
-
-    a,
-    a:visited,
-    a:hover,
-    a:active {
-      color: #3A4145;
-    }
-  }
-
-  p.meta {
-    font-size: 14px;
-    color: #4e4e5a;
-  }
-
-  p.meta i {
-    margin-right: 6px;
-  }
-
-  p.meta a.tag {
-    margin-left: 3px;
-  }
-
-  p.meta a.tag.no-margin {
-    margin: 0px;
-  }
-}
-
-div.article-aligner {
-  height: 48px;
-}
-
-/* Footer */
-
 footer {
   text-align: center;
   background-color: #1a1a1a;
@@ -218,9 +175,3 @@ footer {
     }
   }  
 }
-
-@import "home";
-@import "blog";
-@import "subscribers";
-@import "post";
-@import "tags";
