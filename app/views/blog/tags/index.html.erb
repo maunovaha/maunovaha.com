@@ -4,7 +4,7 @@
 </header>
 
 <% @blogger.tags.each do |name, tag| %>
-  <h2 id="<%= name %>"><%= tag.hashtag %><% if tag.posts.size > 1 %><span> x <%= tag.posts.size %></span><% end %></h2>
+  <h2 id="<%= name %>"><%= tag.hashtag %><% if tag.posts.size > 1 %><span> ( x <%= tag.posts.size %> )</span><% end %></h2>
   <ul>
     <% tag.posts.each_with_index do |post, index| %>
       <li>
