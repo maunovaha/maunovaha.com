@@ -3,7 +3,7 @@ module Blog
     layout "blog"
 
     def index
-      render "tags/index"
+      render "blog/tags/index"
     end
   end
 end

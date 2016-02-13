@@ -1,2 +1,63 @@
 main.main-tags {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 0px 20px;
+
+  header {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+
+    h1 {
+      font-size: 28px;
+      margin: 0px;
+      line-height: 42px;
+
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #3A4145;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #4e4e5a;
+    }
+  }
+
+  ul {
+    margin-bottom: 48px;
+  }
+
+  ul li:first-child {
+    margin-bottom: 32px;
+  }
+
+  ul li {
+    list-style: circle;
+    margin-bottom: 16px;
+
+    p.post-preview {
+      margin-bottom: 12px;
+    }
+  }
+
+  .tags-nav {
+    margin-top: 56px;
+    border-top: 1px solid #eee;
+    padding-top: 24px;
+    font-size: 14px;
+
+    a {
+      font-size: 14px;
+    }
+
+    a.btn-previous {
+      float: left;
+      i {
+        margin-right: 6px;
+      }
+    }
+  }
 }

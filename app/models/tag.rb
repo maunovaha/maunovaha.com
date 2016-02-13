@@ -1,15 +1,30 @@
 class Tag
-  attr_reader :name
+  attr_accessor :posts
+  attr_reader   :name
 
   def initialize(name)
     @name = name
+    @posts = []
   end
 
-  def name
+  class << self
+    def all(posts)
+      tags = {}
+      posts.each do |post| 
+        post.tags.each do |tag|
+          tags[tag.name] = Tag.new(tag.name) unless tags.key?(tag.name) # Unique tags
+          tags[tag.name].posts << post
+        end
+      end
+      tags
+    end
+  end
+
+  def hashtag
     "##{@name}"
   end
 
   def url
-    "/blog/tags/##{@name}"
+    "/blog/tags/#{hashtag}"
   end
 end

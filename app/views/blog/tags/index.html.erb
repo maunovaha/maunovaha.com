@@ -1,4 +1,28 @@
 <header>
-  <h1>Tags</h1>
-  <p>Total of 12 unique tags and 1 blog posts.</p>
+  <h1><%= link_to "Tags", blog_tags_path %></h1>
+  <p>Total of <%= @blogger.tags.length %> unique tags and <%= @blogger.posts[:all].size %> blog posts.</p>
 </header>
+
+<% @blogger.tags.each do |name, tag| %>
+  <h2 id="<%= name %>"><%= tag.hashtag %><% if tag.posts.size > 1 %><span> x <%= tag.posts.size %></span><% end %></h2>
+  <ul>
+    <% tag.posts.each_with_index do |post, index| %>
+      <li>
+        <%= link_to post.title, post.url %>
+        <% if index == 0 %>
+          <p class="post-preview"><%= post.preview %></p>
+          <%= link_to post.url, class: "btn-continue-reading" do %>
+            Continue reading<i class="fa fa-angle-double-right"></i>
+          <% end %>
+          <div class="article-aligner"></div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="tags-nav">
+  <%= link_to blog_root_path, class: "btn-previous" do %>
+    <i class="fa fa-long-arrow-left"></i>Go back to blog
+  <% end %>
+</div>
