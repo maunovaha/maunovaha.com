@@ -1,11 +1,20 @@
 <header class="header-blog">
   <nav role="navigation">
     <ul>
-      <li><a href="#">maunovaha.com</a></li>
-      <li style="margin: 0px 6px;">&raquo;</li>
-      <li><a href="#">blog</a></li>
-      <li style="margin: 0px 6px;">&raquo;</li>
-      <li><a href="#" class="selected">tags</a></li>
+      <li>
+        <%= link_to "maunovaha.com", root_path %>
+      </li>
+      <li class="separator"><i class="fa fa-angle-double-right"></i></li>
+      <li>
+        <%= link_to "blog", blog_root_path, class: (controller_name == "posts" ? "selected" : "") %>
+      </li>
+      <% if controller_name == "tags" %>
+      <li class="separator"><i class="fa fa-angle-double-right"></i></li>
+      <li>
+        <%= link_to "tags", blog_tags_path, class: "selected" %>
+      </li>
+      <% end %>
     </ul>
   </nav>
 </header>
+
