@@ -1,6 +1,6 @@
 class Subscriber < ActiveRecord::Base
-  # User needs to accept subscription within 24 hours or token is invalid
-  TOKEN_EXPIRATION_TIME = 24.hours
+  # User needs to accept subscription within 48 hours or token is invalid
+  TOKEN_EXPIRATION_TIME = 48.hours
 
   attr_accessor :refresh_token
 
