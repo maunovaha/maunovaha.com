@@ -99,16 +99,6 @@ RSpec.describe SubscribersController, :type => :controller do
     end
 
     context "when invalid request" do
-      context "then requested with invalid MIME type" do
-        before(:each) do 
-          include_headers(:html) 
-          post :create, subscriber: { email: "valid@email.com" }
-        end
-
-        it "responds with status (406 Not Acceptable)" do
-          expect(response).to have_http_status(406)
-        end
-      end
       context "then email is invalid" do
         let(:email) { "not-valid-email.com" }
 
@@ -164,17 +154,6 @@ RSpec.describe SubscribersController, :type => :controller do
     end
 
     context "when invalid request" do
-      context "then requested with invalid MIME type" do
-        let!(:subscriber) { FactoryGirl.create(:subscriber) }
-        before(:each) do 
-          include_headers(:json) 
-          get :activate, { id: subscriber.id, token: subscriber.token, email: subscriber.email }
-        end
-
-        it "responds with status (406 Not Acceptable)" do
-          expect(response).to have_http_status(406)
-        end
-      end
       context "then given token is already expired" do
         let!(:subscriber) { FactoryGirl.create(:subscriber, token_expires_at: Time.now.utc - 48.hours) }
         before(:each) do
@@ -220,17 +199,7 @@ RSpec.describe SubscribersController, :type => :controller do
     end
 
     context "when invalid request" do
-      context "then requested with invalid MIME type" do
-        let!(:subscriber) { FactoryGirl.create(:subscriber) }
-        before(:each) do 
-          include_headers(:json) 
-          get :cancel, { id: subscriber.id, token: subscriber.token, email: subscriber.email }
-        end
-
-        it "responds with status (406 Not Acceptable)" do
-          expect(response).to have_http_status(406)
-        end
-      end
+      # Nothing?
     end
   end
 end
