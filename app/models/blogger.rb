@@ -18,8 +18,8 @@ class Blogger
     @posts[url] or raise PostNotFound.new('Not Found')
   end
 
-  def latest_posts(count = 2)
-    @posts[:all].reverse.first(count)
+  def latest_posts(all: false)
+    @posts[:all].reverse.first(all ? @posts[:all].size : 2)
   end
 
   private

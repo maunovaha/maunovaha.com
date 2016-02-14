@@ -44,4 +44,12 @@ main.main-blog {
   max-width: 750px;
   margin: 60px auto;
   padding: 0px 20px;
+
+  p.start-of-blog {
+    border-top: 1px solid #eee;
+    margin-top: 56px;
+    padding-top: 24px;
+    font-size: 14px;
+    text-align: center;
+  }
 }

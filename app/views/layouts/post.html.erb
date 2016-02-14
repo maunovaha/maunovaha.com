@@ -15,7 +15,7 @@
 
     <!-- Post sharing -->
     <% if Rails.env.production? %>
-      <div class="post-sharing pure-u-1">
+      <div class="post-sharing">
         <script 
           type="text/javascript" 
           src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54abd9e605655107" 
@@ -26,17 +26,24 @@
     <% end %>
 
     <!-- Post navigation -->
-    <div class="post-nav pure-u-1">
-      <% if prev_post? %>
-        <%= link_to prev_post.url, class: "btn-previous" do %>
-          <i class="fa fa-long-arrow-left"></i>Previous
+    <div class="post-nav pure-g">
+      <div class="pure-u-1-3 text-left">
+        <% if prev_post? %>
+          <%= link_to prev_post.url, class: "btn-previous" do %>
+            <i class="fa fa-long-arrow-left"></i>Previous
+          <% end %>
         <% end %>
-      <% end %>
-      <% if next_post? %>
-        <%= link_to next_post.url, class: "btn-next" do %>
-          Next<i class="fa fa-long-arrow-right"></i>
+      </div>
+      <div class="pure-u-1-3">
+        <%= link_to "Home", blog_root_path %>
+      </div>
+      <div class="pure-u-1-3 text-right">
+        <% if next_post? %>
+          <%= link_to next_post.url, class: "btn-next" do %>
+            Next<i class="fa fa-long-arrow-right"></i>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
   </main>
   

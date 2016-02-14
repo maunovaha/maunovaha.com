@@ -1,2 +1,26 @@
-<p>This is blog index</p>
+<% @blogger.latest_posts(all: true).each_with_index do |post, index| %>
+  <article class="post">
+    <!-- Post aligner -->
+    <% if index > 0 %>
+      <div class="post-aligner"></div>
+    <% end %>
+    
+    <!-- Post header -->
+    <%= render "blog/posts/header", post: post %>
 
+    <!-- First post is displayed as a whole -->
+    <p class="post-preview">
+      <% if index == 0 %>
+        <%= render file: post.template %>
+      <% else %>
+        <%= post.preview %>
+      <% end %>
+    </p>
+
+    <%= link_to post.url, class: "btn-continue-reading" do %>
+      Continue reading<i class="fa fa-angle-double-right"></i>
+    <% end %>
+  </article>
+<% end %>
+
+<p class="start-of-blog">Pssst.. The post above is the very first post of this blog <i class="fa fa-smile-o"></i></p>

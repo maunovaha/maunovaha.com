@@ -64,7 +64,7 @@ main.main-post {
   /* Sharing */
 
   .post-sharing {
-    margin-top: 30px;
+    margin-top: 56px;
     border-bottom: 1px solid #eee;
     padding-bottom: 7px;
   }
@@ -72,24 +72,21 @@ main.main-post {
   /* Navigation */
 
   .post-nav {
-    margin-top: 40px;
-    border-top: 1px solid #eee;
     padding-top: 24px;
     font-size: 14px;
+    text-align: center;
 
     a {
       font-size: 14px;
     }
     
     a.btn-next {
-      float: right;
       i {
         margin-left: 10px;
       }
     }
 
     a.btn-previous {
-      float: left;
       i {
         margin-right: 10px;
       }
