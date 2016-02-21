@@ -1,0 +1,14 @@
+<!--[if lte IE 9]>
+  <%= javascript_include_tag 'jquery-placeholder' %>
+  <script>
+    $(function() {
+      // Activates jquery placeholders for IE < 10.
+      $('input, textarea').placeholder();
+
+      // Removes not-for-lte-ie-9 classes which CSS may cause bugs for those browsers
+      if ($('.btn-submit').length) {
+        $('.btn-submit').removeClass('not-for-lte-ie-9');
+      }
+    });
+  </script>
+<![endif]-->

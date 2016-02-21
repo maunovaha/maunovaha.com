@@ -12,6 +12,9 @@ Rails.application.config.assets.version = '1.0'
 
 # JS
 Rails.application.config.assets.precompile += %w( jquery-ui.js )
+Rails.application.config.assets.precompile += %w( jquery-placeholder.js )
+Rails.application.config.assets.precompile += %w( html5shiv.js )
+Rails.application.config.assets.precompile += %w( respond.js )
 
 # CSS
 Rails.application.config.assets.precompile += %w( pure.css )

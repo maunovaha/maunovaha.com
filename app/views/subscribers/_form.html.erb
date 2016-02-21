@@ -1,7 +1,7 @@
 <%= simple_form_for(@subscriber, remote: true) do |f| %>
-  <%= f.input_field :email, maxlength: 255, placeholder: "Your email address" %>
+  <%= f.input_field :email, class: "input-email", maxlength: 255, placeholder: "Your email address" %>
   <span>
-    <%= f.button :submit, value: "", class: "fa-input", id: "subscriber_send" %>
+    <%= f.button :submit, value: "", class: "not-for-lte-ie-9 btn-submit fa-input", id: "subscriber_send" %>
   </span>
 <% end %>
 <div class="notification">
