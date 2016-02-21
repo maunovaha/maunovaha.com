@@ -23,6 +23,7 @@ footer {
       max-width: 480px;
       margin: 26px auto 0px auto;
       border: 1px solid #525252;
+      -ms-transition: border-color .2s;
       -moz-transition: border-color .2s;
       -o-transition: border-color .2s;
       -webkit-transition: border-color .2s;
@@ -53,9 +54,11 @@ footer {
           vertical-align: middle; 
           overflow: visible;
           background-color: #00B140;
+          border-radius: 0px;
         }
 
         input.btn-submit.not-for-lte-ie-9 {
+          -ms-transition: background-color .2s;
           -moz-transition: background-color .2s;
           -o-transition: background-color .2s;
           -webkit-transition: background-color .2s;
@@ -117,6 +120,7 @@ footer {
         text-decoration: none;
         padding: 10px;
         margin: 10px;
+        -ms-transition: color .2s;
         -moz-transition: color .2s;
         -o-transition: color .2s;
         -webkit-transition: color .2s;
@@ -133,6 +137,7 @@ footer {
     width: 1px;
     height: 3px;
     background-color: #1a1a1a;
+    -ms-transition: width .2s;
     -moz-transition: width .2s;
     -o-transition: width .2s;
     -webkit-transition: width .2s;
