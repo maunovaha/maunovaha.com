@@ -5,7 +5,7 @@ class SubscribersController < ApplicationController
     @subscriber = Subscriber.find_by_email(subscriber_params[:email]) || 
                   Subscriber.new(subscriber_params)
 
-    # Handles generation of random token (expires after 24 hours.)
+    # Handles generation of random token (expires after 48 hours.)
     @subscriber.refresh_token = true unless @subscriber.active?
 
     if @subscriber.active?
