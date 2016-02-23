@@ -11,7 +11,7 @@ class SubscribersController < ApplicationController
     if @subscriber.active?
       render json: @subscriber, status: :ok
     elsif @subscriber.save
-      SubscriberMailer.confirmation_email(@subscriber).deliver_later
+      SubscriberMailer.confirmation_email(@subscriber.mailer_opts).deliver_later
       render json: @subscriber, status: :created
     else
       render json: @subscriber.errors, status: :unprocessable_entity

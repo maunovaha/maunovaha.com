@@ -1,4 +1,6 @@
 class Post
+  include ApplicationHelper
+
   attr_reader :date, :title, :published, :tags, :preview, :index
 
   def initialize(opts = {})
@@ -7,8 +9,7 @@ class Post
     @preview   = opts[:preview]    
     @published = opts[:published] # Only published posts are displayed
     @index     = opts[:index]     # Order number of the post, e.g. 0 (first post)
-    @tags      = []               
-    opts[:tags].each { |tag| @tags << Tag.new(tag) }
+    @tags      = opts[:tags].map { |tag| Tag.new(tag) }
   end
 
   class << self
@@ -35,8 +36,10 @@ class Post
     end
   end
 
-  def url
-    "/blog/#{urlsafe_date}/#{urlsafe_title}"
+  def url(with_root: false)
+    url  = ""
+    url << base_url if with_root
+    url << "/blog/#{urlsafe_date}/#{urlsafe_title}"
   end
 
   def template
@@ -44,7 +47,22 @@ class Post
   end
 
   def readable_date
-    date.strftime("%B %e, %Y")
+    date.strftime("%B%e, %Y")
+  end
+
+  def mailer_opts
+    {
+      title: title,
+      url: url(with_root: true),
+      date: readable_date,
+      preview: preview,
+      tags: tags.map do |tag| 
+        { 
+          name: tag.hashtag, 
+          url: tag.url(with_root: true)
+        } 
+      end
+    }
   end
 
   private

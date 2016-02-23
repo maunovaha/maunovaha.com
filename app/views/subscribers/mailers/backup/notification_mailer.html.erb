@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width"/>
+  <style>
+  
+  #outlook a { 
+    padding:0; 
+  } 
+
+  body{ 
+    background: #f7f7f7;
+    width:100% !important; 
+    min-width: 100%;
+    -webkit-text-size-adjust:100%; 
+    -ms-text-size-adjust:100%; 
+    margin:0; 
+    padding:0;
+  }
+
+  .ExternalClass { 
+    width:100%;
+  } 
+
+  .ExternalClass, 
+  .ExternalClass p, 
+  .ExternalClass span, 
+  .ExternalClass font, 
+  .ExternalClass td, 
+  .ExternalClass div { 
+    line-height: 100%; 
+  } 
+
+  #backgroundTable { 
+    margin:0; 
+    padding:0; 
+    width:100% !important; 
+    line-height: 100% !important; 
+  }
+
+  img { 
+    outline:none; 
+    text-decoration:none; 
+    -ms-interpolation-mode: bicubic;
+    width: auto;
+    max-width: 100%; 
+    float: left; 
+    clear: both; 
+    display: block;
+  }
+
+  center {
+    width: 100%;
+    min-width: 640px;
+  }
+
+  a img { 
+    border: none;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  td { 
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    border-collapse: collapse !important; 
+  }
+
+  td.td-content-padding {
+    background: #f7f7f7;
+    padding: 40px 0px;
+  }
+
+  table, tr, td {
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  hr {
+    color: #d9d9d9; 
+    background-color: #d9d9d9; 
+    height: 1px; 
+    border: none;
+  }
+
+  /* Responsive Grid */
+
+  table.body {
+    height: 100%;
+    width: 100%;
+  }
+
+  table.container {
+    width: 640px;
+    margin: 0 auto;
+    text-align: inherit;
+    background: #fff;
+  }
+
+  table.row { 
+    padding: 0px; 
+    width: 100%;
+    position: relative;
+  }
+
+  table.container table.row {
+    display: block;
+  }
+
+  td.wrapper {
+    padding: 0px;
+    position: relative;
+  }
+
+  table.columns,
+  table.column {
+    margin: 0 auto;
+  }
+
+  table.columns td,
+  table.column td {
+    padding: 0px; 
+  }
+
+  table.columns td.td-notification {
+    padding: 48px 48px 48px 48px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  table.columns td.td-notification p.no-margin-notify {
+    margin: 0px;
+  }
+
+  table.columns td.footer-copy {
+    background: #f7f7f7;
+    padding: 20px 0px;
+  }
+
+  table.columns td.footer-copy p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+    
+  p.font-bold, span.font-bold {
+    font-weight: bold !important;
+  }
+
+  table.columns td.td-post-preview {
+    padding: 48px;
+  }
+
+  table.columns td.td-post-preview h1 {
+    font-size: 28px;
+  }
+
+  table.columns td.td-post-preview p.meta {
+    font-size: 14px;
+    margin: 14px 0px;
+  }
+
+  table.columns td.td-post-preview p.aligner {
+    border-bottom: 1px solid #eeeeee;
+    font-size: 1px;
+    line-height: 1px;
+  }
+
+  table.columns td.td-post-preview p.preview {
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+
+  table.columns td.td-continue-reading {
+    padding: 0px 48px 48px 48px;
+  }
+
+  table.twelve { width: 640px; }
+  table.twelve center { min-width: 640px; }
+
+  .body .columns td.twelve,
+  .body .column td.twelve { width: 100%; }
+
+  td.expander {
+    visibility: hidden;
+    width: 0px;
+    padding: 0 !important;
+  }
+
+  /* Alignment & Visibility Classes */
+
+  table.center, td.center {
+    text-align: center;
+  }
+
+  h1.center,
+  h2.center,
+  h3.center,
+  h4.center,
+  h5.center,
+  h6.center {
+    text-align: center;
+  }
+
+  span.center {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  img.center {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .show-for-small,
+  .hide-for-desktop {
+    display: none;
+  }
+
+  /* Typography */
+
+  body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+    color: #3A4145;
+    font-family: "Helvetica", "Arial", sans-serif; 
+    font-weight: normal; 
+    padding:0; 
+    margin: 0;
+    text-align: left; 
+    line-height: 1.3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    word-break: normal;
+  }
+
+  h1 {font-size: 40px;}
+  h2 {font-size: 36px;}
+  h3 {font-size: 32px;}
+  h4 {font-size: 28px;}
+  h5 {font-size: 24px;}
+  h6 {font-size: 20px;}
+  body, table.body, p, td {font-size: 16px;line-height:27.2px;}
+
+  p.lead, p.lede, p.leed {
+    font-size: 18px;
+    line-height:27.2px;
+  }
+
+  p { 
+    margin-bottom: 10px;
+  }
+
+  small {
+    font-size: 10px;
+  }
+
+  a {
+    color: #3D92C9; 
+    text-decoration: none;
+  }
+
+  a:hover { 
+    color: #3D92C9 !important;
+    text-decoration: underline;
+  }
+
+  a:active { 
+    color: #3D92C9 !important;
+  }
+
+  a:visited { 
+    color: #3D92C9 !important;
+  }
+
+  h1 a, 
+  h2 a, 
+  h3 a, 
+  h4 a, 
+  h5 a, 
+  h6 a {
+    color: #3A4145;
+  }
+
+  h1 a:active, 
+  h2 a:active,  
+  h3 a:active, 
+  h4 a:active, 
+  h5 a:active, 
+  h6 a:active { 
+    color: #3A4145 !important; 
+  } 
+
+  h1 a:visited, 
+  h2 a:visited,  
+  h3 a:visited, 
+  h4 a:visited, 
+  h5 a:visited, 
+  h6 a:visited { 
+    color: #3A4145 !important; 
+  } 
+
+  /* Buttons */
+
+  table.button {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  table.button td {
+    display: block;
+    width: auto !important;
+    text-align: center;
+    background: #3D92C9;
+    color: #ffffff;
+    padding: 24px 0px;
+  }
+
+  table.button td a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  table.button:hover td a,
+  table.button:visited td a,
+  table.button:active td a {
+    color: #fff !important;
+    cursor: pointer;
+  }
+
+  table.button:hover td a,
+  table.button:active td a,
+  table.button td a:visited {
+    color: #ffffff !important; 
+  }
+
+  /* Outlook First */
+
+  body.outlook p {
+    display: inline !important;
+  }
+
+  /*  Media Queries */
+
+  @media only screen and (max-width: 760px) {
+
+    table[class="body"] img {
+      width: auto !important;
+      height: auto !important;
+    }
+
+    table[class="body"] center {
+      min-width: 0 !important;
+    }
+
+    table[class="body"] .container {
+      width: 90% !important;
+    }
+
+    table[class="body"] .row {
+      width: 100% !important;
+      display: block !important;
+    }
+
+    table[class="body"] .wrapper {
+      display: block !important;
+      padding-right: 0 !important;
+    }
+
+    table[class="body"] .columns,
+    table[class="body"] .column {
+      table-layout: fixed !important;
+      float: none !important;
+      width: 100% !important;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      display: block !important;
+    }
+
+    table[class="body"] .wrapper.first .columns,
+    table[class="body"] .wrapper.first .column {
+      display: table !important;
+    }
+
+    table[class="body"] table.columns td,
+    table[class="body"] table.column td {
+      width: 100% !important;
+    }
+
+    table[class="body"] .columns td.twelve,
+    table[class="body"] .column td.twelve { width: 100% !important; }
+
+    table[class="body"] table.columns td.expander {
+      width: 1px !important;
+    }
+
+    table[class="body"] .hide-for-small,
+    table[class="body"] .show-for-desktop {
+      display: none !important;
+    }
+
+    table[class="body"] .show-for-small,
+    table[class="body"] .hide-for-desktop {
+      display: inherit !important;
+    }
+  }
+  </style>
+</head>
+<body>
+  <table class="body">
+    <tr>
+      <td class="center td-content-padding" align="center" valign="top" bgcolor="#f7f7f7">
+        <center>
+          <table class="container">
+            <tr>
+              <td>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper">
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+                            <img width="640" height="300" src="http://placehold.it/640x300">
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper" bgcolor="#ffffff">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="td-notification">
+                            <p class="font-bold">Hi,</p>
+                            <p class="no-margin-notify">We are pleased to announce that there is a new blog post available.</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper" bgcolor="#ffffff">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="td-post-preview">
+                            <h1><a href="#">Blog title</a></h1>
+                            <p class="meta">April 5, 2015, tagged as 
+                              <a class="tag" href="#">#website</a>,
+                              <a class="tag" href="#">#lol</a>,
+                              <a class="tag" href="#">#jeah</a>
+                            </p>
+                            <p class="aligner">&nbsp;</p>
+                            <p class="preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="td-continue-reading">
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Continue reading</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="row">
+                  <tr>
+                    <td class="wrapper" bgcolor="#f7f7f7">
+                      <table class="twelve columns">
+                        <tr>
+                          <td align="center" class="footer-copy">
+                            <center>
+                              <p>&copy; 2015 and beyond, Mauno Vähä. All rights reserved. | <a href="#">Unsubscribe</a></p>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

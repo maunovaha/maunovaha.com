@@ -1,18 +1,19 @@
 class SubscriberMailer < ApplicationMailer
   
-  def confirmation_email(subscriber)
-    @activation_link = activation_link(subscriber) 
+  def confirmation_email(opts)
+    @activation_url = activation_url(opts) 
 
-    mail(to: subscriber.email,
-         subject: "Verify your subscription",
-         template_path: "subscribers/mailers",
-         template_name: "confirmation_mailer")
+    mail(
+      to: opts[:email],
+      subject: "[Blog] Verify your subscription",
+      template_path: "subscribers/mailers",
+      template_name: "confirmation_mailer"
+    )
   end
 
   private
 
-  def activation_link(subscriber)
-    "http://#{Rails.env.production? ? 'maunovaha.com' : 'localhost:3000'}" \
-    "/subscribers/#{subscriber.id}?email=#{subscriber.email}&token=#{subscriber.token}"
+  def activation_url(opts)
+    "#{base_url}/subscribers/#{opts[:id]}?email=#{opts[:email]}&token=#{opts[:token]}"
   end
 end

@@ -23,4 +23,12 @@ class Subscriber < ActiveRecord::Base
       break random_token unless Subscriber.exists?(token: random_token)
     end
   end
+
+  def mailer_opts
+    { 
+      id: self.id, 
+      email: self.email, 
+      token: self.token
+    }
+  end
 end

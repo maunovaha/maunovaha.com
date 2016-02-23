@@ -1,4 +1,6 @@
 class Tag
+  include ApplicationHelper
+
   attr_accessor :posts
   attr_reader   :name
 
@@ -24,7 +26,9 @@ class Tag
     "##{@name}"
   end
 
-  def url
-    "/blog/tags/#{hashtag}"
+  def url(with_root: false)
+    url  = ""
+    url << base_url if with_root
+    url << "/blog/tags/#{hashtag}"
   end
 end

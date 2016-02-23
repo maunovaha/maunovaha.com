@@ -1,0 +1,23 @@
+Hi,
+
+We are pleased to announce that there is a new blog post available.
+
+---------------
+
+
+<%= @post_opts[:title] %>
+
+<%= @post_opts[:date] %>, tagged as <%= @post_opts[:tags].map { |tag| tag[:name] }.join(", ") %>
+
+<%= @post_opts[:preview] %>
+
+Continue reading:
+
+<%= @post_opts[:url] %>
+
+
+---------------
+
+If you don't want to receive further emails, you can unsubscribe using the following link:
+
+<%= @unsubsribe_url %>
