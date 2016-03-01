@@ -10,14 +10,11 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
-Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
+# Note: 
+# You should precompile only the files which are included alone the page!
+# E.g. html5shiv.js is always included with own tag rather than bundled within another assets.
 
 # JS
-Rails.application.config.assets.precompile += %w( jquery-ui.js )
 Rails.application.config.assets.precompile += %w( jquery-placeholder.js )
 Rails.application.config.assets.precompile += %w( html5shiv.js )
 Rails.application.config.assets.precompile += %w( respond.js )
-
-# CSS
-Rails.application.config.assets.precompile += %w( pure.css )
-Rails.application.config.assets.precompile += %w( font-awesome.css )
