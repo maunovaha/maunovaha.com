@@ -8,7 +8,7 @@ class NotificationMailer < ApplicationMailer
 
     mail(
       to: @subscriber_opts[:email],
-      subject: "[Blog] Latest post: #{@post_opts[:title]}",
+      subject: "Latest post: #{@post_opts[:title]}",
       template_path: "subscribers/mailers",
       template_name: "notification_mailer"
     )

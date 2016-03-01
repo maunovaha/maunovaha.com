@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
   include ApplicationHelper
 
-  default from: "noreply@maunovaha.com"
+  default from: "maunovaha.com <blog@maunovaha.com>"
   layout "mailers/mailer"
 end

@@ -5,7 +5,7 @@ class SubscriberMailer < ApplicationMailer
 
     mail(
       to: opts[:email],
-      subject: "[Blog] Verify your subscription",
+      subject: "Verify your subscription",
       template_path: "subscribers/mailers",
       template_name: "confirmation_mailer"
     )

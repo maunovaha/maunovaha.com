@@ -79,14 +79,12 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'http://maunovaha.com' }
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'smtp.mailgun.org',
     port:                 587,
-    domain:               'gmail.com', # 'localhost:3000'
-    user_name:            ENV['MAUNOVAHA_GMAIL_USERNAME'],
-    password:             ENV['MAUNOVAHA_GMAIL_PASSWORD'],
-    authentication:       'plain',
-    enable_starttls_auto: true
+    domain:               'maunovaha.com',
+    user_name:            ENV['MAUNOVAHA_SMTP_USERNAME'],
+    password:             ENV['MAUNOVAHA_SMTP_PASSWORD'],
+    authentication:       'plain'
   }
 end

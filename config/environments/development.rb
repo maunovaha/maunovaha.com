@@ -40,15 +40,13 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.delivery_method = :letter_opener # :smtp
-  config.action_mailer.default_url_options = { host: '0.0.0.0', port: '3000' }
+  config.action_mailer.delivery_method = :smtp # :letter_opener
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'smtp.mailgun.org',
     port:                 587,
-    domain:               'gmail.com', # 'localhost:3000'
-    user_name:            ENV['MAUNOVAHA_GMAIL_USERNAME'],
-    password:             ENV['MAUNOVAHA_GMAIL_PASSWORD'],
-    authentication:       'plain',
-    enable_starttls_auto: true
+    domain:               'maunovaha.com',
+    user_name:            ENV['MAUNOVAHA_SMTP_USERNAME'],
+    password:             ENV['MAUNOVAHA_SMTP_PASSWORD'],
+    authentication:       'plain'
   }
 end
