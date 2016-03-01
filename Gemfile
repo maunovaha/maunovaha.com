@@ -59,3 +59,6 @@ group :development, :test do
   # Makes emails to be opened in a browser during development
   gem "letter_opener"
 end
+
+# Use 12 factor for logging and assets in production (heroku).
+gem 'rails_12factor', group: :production
