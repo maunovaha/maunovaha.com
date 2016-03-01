@@ -19,6 +19,6 @@ class NotificationMailer < ApplicationMailer
   end
 
   def banner_url
-    "#{base_url}/assets/email-banner.png"
+    "#{base_url}#{view_context.image_path("email-banner.png")}"
   end
 end
