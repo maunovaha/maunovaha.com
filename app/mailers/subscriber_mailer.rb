@@ -15,6 +15,6 @@ class SubscriberMailer < ApplicationMailer
   private
 
   def activation_url(opts)
-    "#{base_url}/subscribers/#{opts[:id]}?email=#{opts[:email]}&token=#{opts[:token]}"
+    "#{base_url}/subscribers/#{opts[:id]}?email=#{CGI.escape(opts[:email])}&token=#{opts[:token]}"
   end
 end

@@ -15,6 +15,6 @@ class NotificationMailer < ApplicationMailer
   end
 
   def unsubsribe_url(opts)
-    "#{base_url}/subscribers/#{opts[:id]}/cancellation?email=#{opts[:email]}&token=#{opts[:token]}"
+    "#{base_url}/subscribers/#{opts[:id]}/cancellation?email=#{CGI.escape(opts[:email])}&token=#{opts[:token]}"
   end
 end
