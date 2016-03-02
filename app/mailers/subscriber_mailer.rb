@@ -2,6 +2,7 @@ class SubscriberMailer < ApplicationMailer
   
   def confirmation_email(opts)
     @activation_url = activation_url(opts) 
+    @banner_url     = banner_url
 
     mail(
       to: opts[:email],

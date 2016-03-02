@@ -17,8 +17,4 @@ class NotificationMailer < ApplicationMailer
   def unsubsribe_url(opts)
     "#{base_url}/subscribers/#{opts[:id]}/cancellation?email=#{opts[:email]}&token=#{opts[:token]}"
   end
-
-  def banner_url
-    "#{base_url}#{view_context.image_path("email-banner.png")}"
-  end
 end
