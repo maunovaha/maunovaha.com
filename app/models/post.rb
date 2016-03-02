@@ -5,6 +5,9 @@ class Post
 
   def initialize(opts = {})
     @date      = opts[:date].to_time
+
+    p "what is the time: #{@date.inspect}"
+
     @title     = opts[:title] 
     @preview   = opts[:preview]    
     @published = opts[:published] # Only published posts are displayed

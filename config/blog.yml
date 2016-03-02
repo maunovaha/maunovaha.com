@@ -1,37 +1,13 @@
 --- 
-date: 2015/01/06
-published: true
-tags: 
-  - introduction
-  - website
-  - 2d-morpg
-title: blog 1
-preview: > 
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-  it to make a type specimen book...
----
-date: 2015/03/08
+date: 2016/03/02
 published: true
 tags: 
   - website
-  - mmo-server
-  - games
-  - lol
-title: blog 2
+  - redesign
+  - planning
+title: Welcome to our new website
 preview: > 
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-  it to make a type specimen book...
----
-date: 2015/04/05
-published: true
-tags: 
-  - website
-  - lol
-  - jeah
-title: blog 3
-preview: > 
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
-  it to make a type specimen book...
+  After couple of months of designing and programming, I am delighted to announce the launch of our new website. 
+  This site should not only work across multiple devices, but also be up-to-date in terms of content. Hence, 
+  making a proper website is just one of the things I wanted to get done before making bigger and more 
+  ambitious projects.

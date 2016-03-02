@@ -45,6 +45,19 @@ main.main-blog {
   margin: 60px auto;
   padding: 0px 20px;
 
+  /* Post */
+
+  .post {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 40px;
+    }
+  }
+
   p.start-of-blog {
     border-top: 1px solid #eee;
     margin-top: 56px;
